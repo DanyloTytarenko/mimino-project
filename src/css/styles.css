@@ -4,7 +4,6 @@
   | default @import url()
   |============================
 */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./main_hero.css');
@@ -26,11 +25,53 @@
 @import url('./book_table_modal.css');
 @import url('./prices_modal.css');
 @import url('./footer.css');
+
+@font-face {
+  font-family: 'Sans Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/DMSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Sans Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/DMSans-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Sans Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/DMSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Sans Regular Italic';
+  font-weight: normal;
+  font-style: italic;
+  src: url('/fonts/DMSans-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Sans Medium Italic';
+  font-weight: 500;
+  font-style: italic;
+  src: url('/fonts/DMSans-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Sans Bold';
+  font-weight: 700;
+  font-style: italic;
+  src: url('/fonts/DMSans-BoldItalic.ttf') format('truetype');
+}
 :root {
-  font-family: 'DM Sans', sans-serif;
+  --regular: 'Sans Regular', sans-serif;
+  --regular-italic: 'Sans Regular Italic', sans-serif;
+  --medium: 'Sans Medium', sans-serif;
+  --medium-italic: 'Sans Medium Italic', sans-serif;
+  --bold: 'Sans Bold', sans-serif;
+  --bold-italic: 'Sans Bold Italic', sans-serif;
+  font-family: var(--regular);
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
