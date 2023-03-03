@@ -5,9 +5,26 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
-
+@import url('./main_hero.css');
+@import url('./main_about.css');
+@import url('./main_restaurant.css');
+@import url('./main_welcome.css');
+@import url('./main_hotel.css');
+@import url('./main_location.css');
+@import url('./restaurant_hero.css');
+@import url('./restaurant_about.css');
+@import url('./restaurant_menu.css');
+@import url('./hotel_hero.css');
+@import url('./hotel_double_room.css');
+@import url('./hotel_triple_room.css');
+@import url('./hotel_four_room.css');
+@import url('./room_hero.css');
+@import url('./room_amenities.css');
+@import url('./book_room_modal.css');
+@import url('./book_table_modal.css');
+@import url('./prices_modal.css');
+@import url('./footer.css');
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
