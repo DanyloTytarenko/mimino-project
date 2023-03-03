@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
 .section {
 }
 .rest-menu-section {
@@ -58,23 +66,47 @@
 }
 @media screen and (min-width: 768px) {
     .rest-title {
+        margin-bottom: 64px;
+
         font-size: 40px;
         line-height: 1.1;
     }
 }
+@media screen and (min-width: 1440px) {
+    .rest-title {
+        margin-bottom: 100px;
+    }
+}
+
+.rest-menu-slide-wrapper {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 .rest-menu-title {
     display: flex;
 }
-.rest-menu-list {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 1439px) {
+    .rest-menu-title {
+        width: 400%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .rest-menu-title {
+        flex-wrap: wrap;
+        column-gap: 74px;
+        row-gap: 50px;
+    }
+}
+
+.rest-menu-page {
     width: 515px;
 }
-.rest-menu-page {
-    /* width: 100%; */
-}
-.rest-menu-page:last-child {
-    margin-bottom: 22px;
+@media screen and (min-width: 768px) {
+    .rest-menu-page {
+        width: 515px;
+    }
 }
 .menu-page-title {
     margin-bottom: 32px;
@@ -86,14 +118,30 @@
     text-transform: uppercase;
 }
 .rest-menu-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 .rest-menu-item {
     width: 100%;
 }
+.rest-menu-item::after {
+    content: '';
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 100%;
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.5);
+}
 .menu-item-subtitle {
     display: flex;
+    margin-bottom: 8px;
 }
 .menu-dish {
+    display: flex;
+    align-items: center;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
@@ -123,6 +171,7 @@
     }
 }
 .dish-weight {
+    margin-left: auto;
     font-size: 12px;
     line-height: 1.17;
     color: #D8D7D7;
@@ -137,7 +186,7 @@
     display: flex;
 }
 .dish-desc {
-    width: 345px;
+    max-width: 345px;
 
     font-family: 'Geometria', sans-serif;
     font-size: 10px;
@@ -152,6 +201,8 @@
     }
 }
 .dish-price {
+    margin-left: auto;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
@@ -161,6 +212,9 @@
         font-size: 18px;
         line-height: 1.33;
     }
+}
+.menu-wrapper {
+    margin-top: 14px;
 }
 .rest-menu-slide {
 }
