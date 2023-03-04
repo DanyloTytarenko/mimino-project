@@ -1,116 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="../css/header.css" rel="stylesheet" />
-    <link href="../css/reset.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <!-- <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../hotel.html">Hotel</a>
-          </li>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link current" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../hotel.html">Hotel</a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="../restaurant.html">Restaurant</a>
+        <li class="nav-item">
+          <a class="nav-link" href="../restaurant.html">Restaurant</a>
+        </li>
+      </ul>
+      <button
+        class="menu-toggle"
+        data-menu-button
+        type="button"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <svg
+          class="mobile-icon"
+          aria-label="mobile-menu"
+          width="21"
+          height="14"
+        >
+          <use class="menu-close" href="../img/icons.svg#close"></use>
+          <use class="menu-icon" href="../img/icons.svg#burger"></use>
+        </svg>
+      </button>
+      <a class="logo" href="./index.html">
+        <span class="header-logo">Mimino</span>
+        <span class="header-logo-light">restaurant-hotel complex</span></a
+      >
+      <div class="header-social">
+        <ul class="mobile-social-list list">
+          <li class="menu-social-item">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            </a>
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use class="social-icon" href="../img/icons.svg#instagram"></use>
+            </svg>
+          </li>
+          <li class="menu-social-item">
+            <a
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            </a>
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use class="social-icon" href="../img/icons.svg#facebook"></use>
+            </svg>
+          </li>
+          <li class="menu-social-item">
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="n_opener noreferrer"
+            >
+            </a>
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use class="social-icon" href="../img/icons.svg#twitter"></use>
+            </svg>
           </li>
         </ul>
-      </nav> -->
+      </div>
 
-        <!-- Mobile menu -->
-
-        <div class="mobile-container">
-          <nav class="nav">
-            <button
-              class="menu-toggle"
-              data-menu-button
-              type="button"
-              aria-controls="mobile-menu"
-              aria-expanded="false"
-            >
-              <svg aria-label="mobile-menu" width="21" height="14">
-                <use class="menu-close" href="../img/icons.svg#close"></use>
-                <use class="menu-icon" href="../img/icons.svg#burger"></use>
+      <!-- Mobile menu -->
+      <div class="menu-container" id="mobile-menu" data-menu>
+        <div class="mobile-menu">
+          <ul class="mobile-list list">
+            <li class="mobile-menu-item">
+              <a class="menu-navlink" href="../index.html">Home</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="menu-navlink" href="../hotel.html">Hotel</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="menu-navlink" href="../restaurant.html">Restaurant</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-menu">
+          <ul class="mobile-social-list list">
+            <li class="menu-social-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              </a>
+              <svg class="menu-social-icon" width="20px" height="20px">
+                <use
+                  class="social-icon"
+                  href="../img/icons.svg#instagram"
+                ></use>
               </svg>
-            </button>
-            <a class="logo" href="./index.html">
-              <span class="header-logo">Mimino</span>
-              <span class="header-logo-light">restaurant-hotel complex</span></a
-            >
-            <div class="menu-container" id="mobile-menu" data-menu>
-              <div class="mobile-menu">
-                <ul class="mobile-list list">
-                  <li class="mobile-menu-item">
-                    <a class="menu-navlink" href="./index.html">Home</a>
-                  </li>
-                  <li class="mobile-menu-item">
-                    <a class="menu-navlink" href>Hotel</a>
-                  </li>
-                  <li class="mobile-menu-item">
-                    <a class="menu-navlink" href>Restaurant</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="social-menu">
-                <ul class="mobile-social-list list">
-                  <li class="menu-social-item">
-                    <a
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                    </a>
-                    <svg class="menu-social-icon" width="20px" height="20px">
-                      <use
-                        class="social-icon"
-                        href="../img/icons.svg#instagram"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="menu-social-item">
-                    <a
-                      href="https://uk-ua.facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                    </a>
-                    <svg class="menu-social-icon" width="20px" height="20px">
-                      <use
-                        class="social-icon"
-                        href="../img/icons.svg#facebook"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="menu-social-item">
-                    <a
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="n_opener noreferrer"
-                    >
-                    </a>
-                    <svg class="menu-social-icon" width="20px" height="20px">
-                      <use
-                        class="social-icon"
-                        href="../img/icons.svg#twitter"
-                      ></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+            </li>
+            <li class="menu-social-item">
+              <a
+                href="https://uk-ua.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              </a>
+              <svg class="menu-social-icon" width="20px" height="20px">
+                <use class="social-icon" href="../img/icons.svg#facebook"></use>
+              </svg>
+            </li>
+            <li class="menu-social-item">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="n_opener noreferrer"
+              >
+              </a>
+              <svg class="menu-social-icon" width="20px" height="20px">
+                <use class="social-icon" href="../img/icons.svg#twitter"></use>
+              </svg>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <script src="../js/mobile-menu.js" defer></script>
-  </body>
-</html>
+    </nav>
+  </div>
+</header>
+<script src="../js/mobile-menu.js" defer></script>
