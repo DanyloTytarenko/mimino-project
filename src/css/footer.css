@@ -23,8 +23,7 @@
 }
 .footer-logo {
     margin-bottom: 3px;
-
-    font-weight: 500;
+    font-family: var(--medium );
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.18em;
@@ -45,10 +44,11 @@
 .footer-list{
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 
-.footer-item:not(:last-child) {
-    margin-right: 16px;
+.footer-item{
+ 
 } 
 
 .footer-icon {
