@@ -19,17 +19,18 @@ a {
  margin-right: auto;
  margin-left: auto;
  
- outline: 1px solid red;
+ /* outline: 1px solid red; */
 }
 
 .header {
- padding-top: 20px;
- padding-bottom: 20px;
+ position: relative;
+ padding-top: 22px;
+ padding-bottom: 22px;
  background-color: rgb(18, 18, 18);
  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 
-.mobile-container {
+.nav {
  display: flex;
  gap: 83px;
  align-items: center;
@@ -47,6 +48,16 @@ a {
   border: none;
   border-radius: 50%;
   outline: none;
+}
+
+.menu-toggle .menu-close {
+ display: none;
+}
+.menu-toggle.is-open .menu-close {
+ display: block;
+}
+.menu-toggle.is-open .menu-icon {
+ display: none;
 }
 
 .menu-icon {
@@ -73,6 +84,7 @@ text-align: center;
 }
 
 .header-logo-light {
+ display: block;
  margin-top: 3px;
  font-weight: 400;
 font-size: 6px;
@@ -85,12 +97,11 @@ color: rgb(216, 215, 215);
 .menu-container {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   top: 78px;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 24px 20px;
   background-color: rgb(18, 18, 18);
   z-index: 999;
 
@@ -103,7 +114,8 @@ color: rgb(216, 215, 215);
 }
 
 .mobile-menu {
- padding: 129px;
+ margin-top: 128px;
+ margin-bottom: auto;
 }
 
 .mobile-list {
@@ -125,6 +137,11 @@ letter-spacing: 0.05em;
 text-transform: uppercase;
 
 color: rgb(247, 247, 247);
+}
+
+.social-menu {
+ margin-left: 20px;
+ margin-bottom: 24px;
 }
 
 .mobile-social-list {
