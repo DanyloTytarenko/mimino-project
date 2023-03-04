@@ -18,17 +18,13 @@ padding-bottom: 64px;
 
 .room-hero-container {
     max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
     .room-hero-container {
         max-width: 768px;
         padding-left: 32px;
-            padding-right: 32px;
+        padding-right: 32px;
     }
 }
 
@@ -83,6 +79,12 @@ margin-bottom: 24px;
     border-radius: 32px;
 }
 
+.room-hero-btn:hover,
+.room-hero-btn:focus {
+    color: #F7F7F7;
+background-color: #121212;
+}
+
 @media screen and (min-width: 768px) {
     .room-hero-btn {
         min-width: 129px;
@@ -95,11 +97,52 @@ margin-bottom: 24px;
 
 @media screen and (min-width: 1440px) {
     .room-hero-btn {
-        min-width: 152px;
+        width: 155px;
         padding: 9px 24px;
 
         font-size: 18px;
         line-height: calc(24 / 18);
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .room-hero-txt.desk {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+.room-hero-wrap {
+    display: flex;
+    gap: 112px;
+}
+
+.room-hero-left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 139px;
+}
+
+.room-hero-txt.desk {
+    margin-top: auto;
+}
+}
+
+.room-hero-img {
+    width: 250px;
+    height: 429px;
+}
+
+@media screen and (min-width: 768px) {
+.room-hero-img {
+        width: 436px;
+        height: 548px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .room-hero-img {
+        height: 580px;
     }
 }
 
@@ -112,17 +155,12 @@ margin-bottom: 24px;
     text-transform: uppercase;
 }
 
+.room-hero-txt.mob {
+    margin-top: 40px;
+}
+
 @media screen and (min-width: 1440px) {
-.room-hero-wrap {
-    display: flex;
-    gap: 112px;
-}
-
-.room-hero-left {
-    padding-top: 139px;
-}
-
-.room-hero-txt {
-    transform: translateY(-18px)
-}
+    .room-hero-txt.mob {
+        display: none;
+    }
 }
