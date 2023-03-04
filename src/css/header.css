@@ -179,11 +179,20 @@ color: rgb(216, 215, 215);
   line-height: 1.25;
  }
 }
+
 @media screen and (max-width: 767.98px) {
  .header-social {
   display: none;
  }
 }
+
+.header {
+ background-image: url(../img/Hotel/image.jpg);
+ background-position: left 898px top;
+ background-size: 542px;
+ background-repeat: no-repeat;
+}
+
 /* Mobile menu */
 .menu-container {
   display: flex;
