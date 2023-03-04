@@ -1,13 +1,12 @@
+/* |=========================| Reset styles |=========================| */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
 }
+/* |=========================|  |=========================| */
 
-
-.section {
-}
 .rest-menu-section {
     padding-top: 40px;
     padding-bottom: 64px;
@@ -26,8 +25,6 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
-}
-.container {
 }
 .rest-container {
     min-width: 320px;
@@ -186,7 +183,7 @@
     display: flex;
 }
 .dish-desc {
-    max-width: 345px;
+    max-width: 233px;
 
     font-family: 'Geometria', sans-serif;
     font-size: 10px;
@@ -196,6 +193,8 @@
 }
 @media screen and (min-width: 768px) {
     .dish-desc {
+        max-width: 345px;
+
         font-size: 12px;
         line-height: 1.5;
     }
@@ -217,10 +216,70 @@
     margin-top: 14px;
 }
 .rest-menu-slide {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 32px;
 }
-.btn-rest-menu-prev {
+@media screen and (min-width: 768px) {
+    .rest-menu-slide {
+        gap: 20px;
+        margin-top: 32px;
+    }
 }
-.btn-rest-menu-next {
+.btn-rest-menu-prev, .btn-rest-menu-next {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
+.img-btn-prev-small,
+.img-btn-next-small {
+    display: block;
+}
+.img-btn-prev-large,
+.img-btn-next-large {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .img-btn-prev-small,
+    .img-btn-next-small {
+        display: none;
+    }
+    .img-btn-prev-large,
+    .img-btn-next-large {
+        display: block;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .img-btn-prev-large,
+    .img-btn-next-large {
+        display: none;
+    }
 }
 .btn-book-table-dark {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 8px 24px;
+
+    font-family: 'DM Sans';
+    font-size: 14px;
+    line-height: 1.71;
+    text-transform: uppercase;
+    color: #F7F7F7;
+
+    border: 0.8px solid #F7F7F7;
+    border-radius: 32px;
+    background-color: inherit;
+}
+@media screen and (min-width: 768px) {
+    .btn-book-table-dark {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .btn-book-table-dark {
+        margin-top: 50px;
+    }
 }
