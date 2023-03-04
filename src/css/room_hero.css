@@ -1,0 +1,128 @@
+.room-hero-section {
+padding-top: 40px;
+padding-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .room-hero-section {
+        padding-bottom: 120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .room-hero-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.room-hero-container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .room-hero-container {
+        max-width: 768px;
+        padding-left: 32px;
+            padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .room-hero-container {
+        max-width: 1440px;
+    }
+}
+
+.room-hero-title {
+max-width: 270px;
+margin-bottom: 24px;
+
+    font-family: var(--regular-italic);
+    font-size: 40px;
+    line-height: calc(40 / 40);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .room-hero-title {
+        max-width: 406px;
+        margin-bottom: 18px;
+
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .room-hero-title {
+        max-width: 592px;
+        margin-bottom: 32px;
+
+        font-size: 80px;
+    }
+}
+
+.room-hero-btn {
+    min-width: 117px;
+    padding: 8px 18px;
+    margin-bottom: 40px;
+
+    font-family: inherit;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 0.8px solid;
+    border-radius: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .room-hero-btn {
+        min-width: 129px;
+        padding: 8px 24px;
+        margin-bottom: 28px;
+
+        line-height: calc(24 / 14);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .room-hero-btn {
+        min-width: 152px;
+        padding: 9px 24px;
+
+        font-size: 18px;
+        line-height: calc(24 / 18);
+    }
+}
+
+.room-hero-txt {
+    width: 289px;
+
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1440px) {
+.room-hero-wrap {
+    display: flex;
+    gap: 112px;
+}
+
+.room-hero-left {
+    padding-top: 139px;
+}
+
+.room-hero-txt {
+    transform: translateY(-18px)
+}
+}
