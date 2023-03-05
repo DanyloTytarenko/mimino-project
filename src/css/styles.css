@@ -4,6 +4,31 @@
   | default @import url()
   |============================
 */
+.container {
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./main_hero.css');
@@ -62,6 +87,12 @@
   font-style: italic;
   src: url('/fonts/DMSans-BoldItalic.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Geometria-Regular.ttf') format('truetype');
+}
 :root {
   --regular: 'Sans Regular', sans-serif;
   --regular-italic: 'Sans Regular Italic', sans-serif;
@@ -69,6 +100,7 @@
   --medium-italic: 'Sans Medium Italic', sans-serif;
   --bold: 'Sans Bold', sans-serif;
   --bold-italic: 'Sans Bold Italic', sans-serif;
+  --geometria: 'Geometria', san-serif;
   font-family: var(--regular);
   font-size: 16px;
   line-height: 24px;
@@ -81,11 +113,4 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-.container {
-  min-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
 }
