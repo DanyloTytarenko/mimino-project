@@ -1,87 +1,118 @@
-@font-face {
-    font-family: 'Sans Regular';
-    font-weight: normal;
-    font-style: normal;
-    src: url('/fonts/DMSans-Regular.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Sans Medium';
-    font-weight: 500;
-    font-style: normal;
-    src: url('/fonts/DMSans-Medium.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Sans Bold';
-    font-weight: 700;
-    font-style: normal;
-    src: url('/fonts/DMSans-Bold.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Sans Regular Italic';
-    font-weight: normal;
-    font-style: italic;
-    src: url('/fonts/DMSans-Italic.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Sans Medium Italic';
-    font-weight: 500;
-    font-style: italic;
-    src: url('/fonts/DMSans-MediumItalic.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Sans Bold';
-    font-weight: 700;
-    font-style: italic;
-    src: url('/fonts/DMSans-BoldItalic.ttf') format('truetype');
-  }
+body {
+  padding: 0;
+  margin: 0;
+}
 
   img {
     display: block;
     max-width: 100%;
     height: auto;
     
-    object-fit: cover;
-    object-position:center ;
     }
 
-    
+
+.container {
+min-width: 320px;
+margin-right: auto;
+margin-left: auto;
+padding-right: 20px;
+padding-left: 20px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+.container {
+max-width: 375px;
+}
+}
+
+@media screen and (min-width: 768px) {
+.container {
+max-width: 768px;
+padding-right: 32px;
+padding-left: 32px;
+}
+}
+   
+@media screen and (min-width: 1440px) {
+  .container {
+   max-width: 1440px;
+  }
+  }
+
+@media screen and (min-width: 1440px) {
+.main-restaurant {
+position: relative;
+padding-top: 44px;
+}
+}
+
+@media screen and (max-width: 767px) {
 .main-restaurant-title-text {
 display: flex;
+flex-direction: column;
+gap: 24px;
+
+margin-bottom: 32px;
+}
+}
+
+@media screen and (min-width: 768px) {
+.main-restaurant-title-text {
+display: flex;
+align-items: center;
 gap: 32px;
-margin-bottom: 87px;
+margin-bottom: 80px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.main-restaurant-title-text {
+margin-bottom: 125px;
+}
 }
 
 .main-restaurant-title {
+font-family: var(--medium);
 font-weight: 500;
 font-size: 40px;
 line-height: calc(40 / 40);
 letter-spacing: -0.02em;
+}
 
-margin-bottom: 24px;
-
+@media screen and (min-width: 768px) {
+.main-restaurant-title {
+font-size: 68px;
+line-height: calc (68 / 68);
+}
 }
 
 .main-restaurant-text {
+font-family: var(--medium);
 font-weight: 500;
 font-size: 14px;
 line-height: calc(18 / 14);
 letter-spacing: -0.02em;
 text-transform: uppercase;
 width: 221px;
-
-margin-bottom: 32px;
 }
 
 .main-restaurant-list {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 82px;
+display: flex;
+gap: 20px;
+margin-bottom: 82px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
 .main-restaurant-list {
 gap: 32px;
 margin-bottom: 108px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.main-restaurant-list {
+gap: 32px;
+margin-bottom: 0;
 }
 }
 
@@ -91,7 +122,7 @@ display: none;
 
 @media screen and (min-width: 1440px) {
 .main-restaurant-item-desktop {
-display: flex;
+display: block;
 }
 .main-restaurant-item {
 display: none;
@@ -99,9 +130,9 @@ display: none;
 }
 
 .main-restaurant-button-list {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
+display: flex;
+gap: 12px;
+justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,38 +141,96 @@ gap: 14px;
 }
 }
 
+@media screen and (min-width: 1440px) {
+.main-restaurant-button-list {
+position: absolute;
+top: 5px;
+right: 32px;
+transform: translateY(100%);
+}
+}
+
 .main-restaurant-button {
+display: block;
+font-family: var(--regular);
 font-size: 14px;
 line-height: calc(18 / 14);
 letter-spacing: -0.02em;
 text-transform: uppercase;
+text-align: center;
+background-color: #F7F7F7;
 
 min-width: 128px;
 min-height: 34px;
 border: 0.8px solid #121212;
 border-radius: 32px;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
 .main-restaurant-button {
 min-width: 140px;
 min-height: 40px;
+font-size: 14px;
 line-height: calc(24 / 14);
 }
 }
 
-.btn-view-menu {
-min-width: 139px;
-}
 
-@media screen and (min-width: 768px) {
-.btn-view-menu {
- min-width: 150px;
+@media screen and (min-width: 1440px) {
+.main-restaurant-button {
+font-size: 18px;
+min-width: 167px;
+min-height: 42px;
+line-height: calc(24 / 18);
 }
 }
 
 .main-restaurant-button:hover,
 .main-restaurant-button:focus {
+color: #F7F7F7;
+background-color: #121212;
+border: 0.8px solid #F7F7F7;
+box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+
+.btn-view-menu {
+display: block;
+font-family: var(--regular);
+font-size: 14px;
+line-height: calc(18 / 14);
+letter-spacing: -0.02em;
+text-transform: uppercase;
+text-align: center;
+background-color: #F7F7F7;
+
+border: 0.8px solid #121212;
+border-radius: 32px;
+
+padding: 8px 18px;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+.btn-view-menu {
+font-size: 14px;
+line-height: calc(24 / 14);
+padding: 8px 24px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.btn-view-menu {
+font-size: 18px;
+line-height: calc(24 / 18);
+padding: 9px 24px;
+}
+}
+
+.btn-view-menu:hover,
+.btn-view-menu:focus {
 color: #F7F7F7;
 background-color: #121212;
 border: 0.8px solid #F7F7F7;
