@@ -30,6 +30,12 @@ body {
  background-color: rgb(18, 18, 18);
  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
+.header {
+ background-image: url(../img/Hotel/image.jpg);
+ background-position: right top;
+ background-size: 542px;
+ background-repeat: no-repeat;
+}
 
 @media screen and (min-width: 768px) {
  .header {
@@ -137,6 +143,10 @@ body {
  }
 }
 
+.social-icon {
+ background-color: transparent;
+}
+
 .menu-icon,
 .menu-close,
 .social-icon {
@@ -186,12 +196,6 @@ color: rgb(216, 215, 215);
  }
 }
 
-.header {
- background-image: url(../img/Hotel/image.jpg);
- background-position: left 898px top;
- background-size: 542px;
- background-repeat: no-repeat;
-}
 
 /* Mobile menu */
 .menu-container {
