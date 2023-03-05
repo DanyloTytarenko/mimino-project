@@ -62,6 +62,12 @@
   font-style: italic;
   src: url('/fonts/DMSans-BoldItalic.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Geometria';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Geometria-Regular.ttf') format('truetype');
+}
 :root {
   --regular: 'Sans Regular', sans-serif;
   --regular-italic: 'Sans Regular Italic', sans-serif;
@@ -69,6 +75,7 @@
   --medium-italic: 'Sans Medium Italic', sans-serif;
   --bold: 'Sans Bold', sans-serif;
   --bold-italic: 'Sans Bold Italic', sans-serif;
+  --geometria: 'Geometria', san-serif;
   font-family: var(--regular);
   font-size: 16px;
   line-height: 24px;
