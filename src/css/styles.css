@@ -19,15 +19,13 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-right: 126px;
-    padding-left: 126px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding-right: 168px;
-    padding-left: 168px;
   }
 }
 
