@@ -174,7 +174,7 @@
     justify-content: space-between;
 }
 .dish-desc {
-    max-width: 233px;
+    max-width: 220px;
 
     font-family: var(--geometria);
     font-size: 10px;
@@ -262,11 +262,17 @@
     border-radius: 32px;
     background-color: inherit;
 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-book-table-dark:hover,
 .btn-book-table-dark:focus {
-    border-color: transparent;
+    color: #121212;
+    background-color: #FFFFFF;
+    border: 0.8px solid #F7F7F7;
+    box-shadow: -14px 24px 68px -16px rgba(255, 255, 255, 0.15);
 }
 @media screen and (min-width: 768px) {
     .btn-book-table-dark {
