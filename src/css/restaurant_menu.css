@@ -114,6 +114,11 @@
     line-height: 1.33;
     text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+    .menu-page-title {
+        line-height: 1;
+    }
+}
 .rest-menu-list {
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +138,7 @@
 }
 .menu-item-subtitle {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 8px;
 }
 .menu-dish {
@@ -168,7 +174,6 @@
     }
 }
 .dish-weight {
-    margin-left: auto;
     font-size: 12px;
     line-height: 1.17;
     color: #D8D7D7;
@@ -181,6 +186,7 @@
 }
 .menu-item-desc {
     display: flex;
+    justify-content: space-between;
 }
 .dish-desc {
     max-width: 233px;
@@ -200,8 +206,6 @@
     }
 }
 .dish-price {
-    margin-left: auto;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
@@ -272,6 +276,12 @@
     border: 0.8px solid #F7F7F7;
     border-radius: 32px;
     background-color: inherit;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-book-table-dark:hover,
+.btn-book-table-dark:focus {
+    border-color: transparent;
 }
 @media screen and (min-width: 768px) {
     .btn-book-table-dark {
