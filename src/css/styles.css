@@ -23,9 +23,7 @@
 @import url('./hotel_four_room.css');
 @import url('./room_hero.css');
 @import url('./room_amenities.css');
-@import url('./book_room_modal.css');
-@import url('./book_table_modal.css');
-@import url('./prices_modal.css');
+@import url('./modal.css');
 @import url('./footer.css');
 
 @font-face {
