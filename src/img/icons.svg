@@ -25,6 +25,20 @@
     <symbol id="select-arrow" viewBox="0 0 19 32">
       <path stroke="F7F7F7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="m5 7.5 5 5 5-5" />
     </symbol>
-
+<symbol id="prev-small" viewBox="0 0 24 24">
+      <path stroke="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".3" stroke-width="1.8"
+        d="M14.666 16.667 9.999 12l4.667-4.666" />
+    </symbol>
+    <symbol id="next-small" viewBox="0 0 24 24">
+      <path stroke="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+        d="m9.331 16.668 4.667-4.666-4.667-4.667" />
+    </symbol>
+    <symbol id="prev-large" viewBox="0 0 36 36">
+      <path stroke="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".3" stroke-width="2"
+        d="m22 25-7-7 7-7" />
+    </symbol>
+    <symbol id="next-large" viewBox="0 0 36 36">
+      <path stroke="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14 25 7-7-7-7" />
+    </symbol>
   </defs>
 </svg>
