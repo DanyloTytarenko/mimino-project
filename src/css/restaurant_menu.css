@@ -26,28 +26,14 @@
         padding-bottom: 100px;
     }
 }
-.rest-container {
-    min-width: 320px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px; 
-    padding-left: 20px;
-}
-@media screen and (min-width: 375px) {
-    .rest-container {
-        max-width: 375px;
-    }   
-}
 @media screen and (min-width: 768px) {
     .rest-container {
-        max-width: 768px;
         padding-right: 126px; 
         padding-left: 126px;
     }
 }
 @media screen and (min-width: 1440px) {
     .rest-container {
-        max-width: 1440px;
         padding-right: 168px; 
         padding-left: 168px;
     }
@@ -74,7 +60,6 @@
         margin-bottom: 100px;
     }
 }
-
 .rest-menu-slide-wrapper {
     overflow: hidden;
     margin-left: auto;
@@ -96,7 +81,6 @@
         row-gap: 50px;
     }
 }
-
 .rest-menu-page {
     width: 515px;
 }
