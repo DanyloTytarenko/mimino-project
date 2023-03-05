@@ -1,0 +1,142 @@
+.img-room {
+  max-width: 335px;
+}
+@media screen and (min-width: 768px) {
+  .img-room {
+    max-width: 331px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .img-room {
+    max-width: 539px;
+  }
+}
+
+.img-bathroom {
+  max-width: 158px;
+}
+@media screen and (min-width: 768px) {
+  .img-bathroom {
+    max-width: 223px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .img-bathroom {
+    max-width: 387px;
+  }
+}
+
+.img-kitchenroom {
+  max-width: 158px;
+}
+@media screen and (min-width: 768px) {
+  .img-kitchenroom {
+    max-width: 341px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .img-kitchenroom {
+    max-width: 386px;
+  }
+}
+.container {
+  max-width: 335px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1376px;
+  }
+}
+.block-img-room {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 19px;
+}
+@media screen and (min-width: 768px) {
+  .block-img-room {
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .block-img-room {
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .flex-desktop {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+}
+.titel-four {
+  font-family: var(--bold);
+  font-size: 32px;
+  line-height: 0.94;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.text-four {
+  font-family: var(--regular);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+.div-text-four {
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .div-text-four {
+    width: 475px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .text-four {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .titel-four {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .div-text-four {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.button-four {
+  display: flex;
+  border: 0.8px solid #121212;
+  border-radius: 32px;
+  padding: 8px 24px;
+  background-color: transparent;
+  font-family: var(--regular);
+  font-size: 14px;
+  line-height: 1.71;
+  text-transform: uppercase;
+}
+.block-button {
+  display: flex;
+  column-gap: 14px;
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .block-button {
+    justify-content: flex-end;
+  }
+}
