@@ -30,11 +30,14 @@ body {
  background-color: rgb(18, 18, 18);
  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
-.header {
- background-image: url(../img/Hotel/image.jpg);
- background-position: right top;
- background-size: 542px;
- background-repeat: no-repeat;
+
+@media screen and (min-width: 1440px) {
+ .header {
+  background-image: url(../img/Hotel/image.jpg);
+  background-position: right top;
+  background-size: 542px;
+  background-repeat: no-repeat;
+ }
 }
 
 @media screen and (min-width: 768px) {
