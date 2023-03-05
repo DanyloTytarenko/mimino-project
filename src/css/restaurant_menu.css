@@ -192,7 +192,7 @@
 .dish-desc {
     max-width: 233px;
 
-    font-family: 'Geometria', sans-serif;
+    font-family: var(--geometria);
     font-size: 10px;
     line-height: 1.4;
     letter-spacing: 0.18em;
