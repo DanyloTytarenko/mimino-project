@@ -1,25 +1,5 @@
-body {
-  padding: 0;
-  margin: 0;
-}
 
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    
-    }
-
-
-.container {
-min-width: 320px;
-margin-right: auto;
-margin-left: auto;
-padding-right: 20px;
-padding-left: 20px;
-}
-
-@media screen and (min-width: 321px) and (max-width: 767px) {
+/* @media screen and (min-width: 321px) and (max-width: 767px) {
 .container {
 max-width: 375px;
 }
@@ -37,7 +17,7 @@ padding-left: 32px;
   .container {
    max-width: 1440px;
   }
-  }
+  } */
 
 @media screen and (min-width: 1440px) {
 .main-restaurant {
@@ -99,6 +79,7 @@ width: 221px;
 .main-restaurant-list {
 display: flex;
 gap: 20px;
+justify-content: center;
 margin-bottom: 82px;
 }
 
@@ -129,6 +110,27 @@ display: none;
 }   
 }
 
+@media screen and (max-width: 767px) {
+.restaurant-photo {
+  min-width: 157px;
+  min-height: 201px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+.restaurant-photo {
+  min-width: 336px;
+  min-height: 309px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.restaurant-photo {
+  min-width: 266px;
+  min-height: 309px;
+  }
+  }
+
 .main-restaurant-button-list {
 display: flex;
 gap: 12px;
@@ -151,14 +153,14 @@ transform: translateY(100%);
 }
 
 .main-restaurant-button {
+font-family: inherit;
 display: block;
-font-family: var(--regular);
 font-size: 14px;
 line-height: calc(18 / 14);
 letter-spacing: -0.02em;
 text-transform: uppercase;
 text-align: center;
-background-color: #F7F7F7;
+background-color: transparent;
 
 min-width: 128px;
 min-height: 34px;
@@ -197,13 +199,12 @@ box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
 
 .btn-view-menu {
 display: block;
-font-family: var(--regular);
 font-size: 14px;
 line-height: calc(18 / 14);
 letter-spacing: -0.02em;
 text-transform: uppercase;
 text-align: center;
-background-color: #F7F7F7;
+background-color: transparent;
 
 border: 0.8px solid #121212;
 border-radius: 32px;
