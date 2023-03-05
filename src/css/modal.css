@@ -1,0 +1,204 @@
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: opacity var(--transition),
+    visibility var(--transition);
+}
+
+.modal-order-box-btn:active .backdrop {
+  opacity: 0;
+}
+
+.modal {
+
+  opacity: 0;
+  visibility: hidden;
+  width: 335px;
+  max-width: 335px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+  padding: 24px 24px 40px;
+  border-radius: 3px;
+  background-color: #121212;
+  transition: 0.3s all;
+  color: white;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.modal-title{
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal-text{
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.modal-order-box-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  transition: background-color var(--transition-duration) var(--const-transition),
+        border var(--transition-duration) var(--const-transition);
+        cursor: pointer;
+}
+.modal-order-box-btn:hover,
+.modal-order-box-btn:focus {
+  background-color: var(--accent-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-field{
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.form-field:last-child{
+  margin-bottom: 40px;
+}
+
+.form-label{
+  position: absolute;
+  top: 0;
+  display: block;
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #F7F7F7;
+}
+.form-input:not(:placeholder-shown) + .form-label, .form-input:focus +.form-label{
+  display: none;
+}
+.form-field > input, select{
+  background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.8px solid #f6f6f633;
+    color: white;
+    padding-bottom: 18px;
+    outline: none;
+    width: 100%;
+
+}
+.form-text{
+  font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #D8D7D7;
+  margin-top: 8px;
+}
+option{
+  background: #121212;
+  color: white;
+}
+.form-button-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-button{
+  padding: 14px 48px;
+  border: 0.8px solid #F7F7F7;
+  background-color: transparent;
+  color: #F7F7F7;
+  text-transform: uppercase;
+  border-radius: 32px;
+  transition: background-color var(--transition), color var(--transition);
+  cursor: pointer;
+}
+.form-button:hover, .form-button:focus{
+  background-color: #F7F7F7;
+  color:#121212;
+}
+
+select{
+    text-transform: uppercase;
+    
+    margin: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+          background-image: url(/modal-arrow.svg);
+          background-position:
+              calc(100% - 0px) calc(0em),
+              calc(100% - 15px) calc(1em + 2px);
+
+              background-size: 20px 20px;
+            background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px){
+  .modal {
+      width: 95%;
+      max-width: 95%;
+      
+}
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 628px;
+    max-width: 628px;
+    padding: 32px 32px 60px;
+  }
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form-field{
+    flex-basis: calc((100% - 32px) / 2);
+  }
+    .form-field:last-child {
+      margin-bottom: 80px;
+    }
+    .form-field-order{
+      order: 1
+    }
+
+    .form-button-block{
+      order: 99;
+      width: 100%;
+    }
+    .form-button{
+      padding: 14px 134px;
+    }
+}
