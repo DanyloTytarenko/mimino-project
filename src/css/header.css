@@ -162,9 +162,9 @@ body {
  }
 }
 
-.social-icon {
+/* .social-icon {
  fill: transparent;
-}
+} */
 
 .menu-icon,
 .menu-close,
@@ -205,20 +205,20 @@ color: rgb(216, 215, 215);
 @media screen and (min-width: 768px) {
  .header-logo-light {
   font-size: 8px;
-  line-height: 1.25;
+  line-height: 1.2;
  }
 }
 
-@media screen and (max-width: 767.98px) {
  .social-list {
   display: none;
  }
-}
 
-.social-list {
- display: flex;
- gap: 14px;
-}
+ @media screen and (min-width: 768px) {
+  .social-list {
+   display: flex;
+   gap: 14px;
+  }
+ }
 
 @media screen and (min-width: 1440px) {
  .social-list {
