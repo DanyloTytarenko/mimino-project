@@ -16,24 +16,6 @@ padding-bottom: 64px;
     }
 }
 
-.room-hero-container {
-    max-width: 375px;
-}
-
-@media screen and (min-width: 768px) {
-    .room-hero-container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .room-hero-container {
-        max-width: 1440px;
-    }
-}
-
 .room-hero-title {
 max-width: 270px;
 margin-bottom: 24px;
@@ -89,7 +71,6 @@ background-color: #121212;
 
 @media screen and (min-width: 768px) {
     .room-hero-btn {
-        min-width: 129px;
         padding: 8px 24px;
         margin-bottom: 28px;
 
@@ -99,7 +80,7 @@ background-color: #121212;
 
 @media screen and (min-width: 1440px) {
     .room-hero-btn {
-        width: 155px;
+        max-width: 155px;
         padding: 9px 24px;
 
         font-size: 18px;
