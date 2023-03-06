@@ -52,11 +52,16 @@
 .address-location {
   width: 214px;
   margin-bottom: 28px;
-  font-family: var(--regular);
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1440px) {
+  .flex-tel {
+    display: flex;
+    column-gap: 12px;
+  }
 }
 .call-tel {
   margin-bottom: 12px;
@@ -66,9 +71,13 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1440px) {
+  .call-tel {
+    margin-bottom: 0;
+  }
+}
 
 .link-tel {
-  font-family: var(--regular);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;

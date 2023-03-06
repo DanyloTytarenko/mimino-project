@@ -1,55 +1,100 @@
 <section class="container">
   <ul class="block-img-room">
     <li class="list-img-room room">
-      <img
-        class="img-room"
-        src="./img/Restaurant/img-chief_511.jpg"
-        alt="img-room"
-        srcset="
-          ./img/Room/imgseater-1_331.jpg   331w,
-          ./img/Room/imgseater-1_335.jpg   335w,
-          ./img/Room/imgseater-1_539.jpg   539w,
-          ./img/Room/imgseater-1_662.jpg   662w,
-          ./img/Room/imgseater-1_670.jpg   670w,
-          ./img/Room/imgseater-1_1078.jpg 1078w
-        "
-        sizes="(min-width: 1440px) 539px, (min-width: 768px) 331px, (min-width: 375px) 335px, 100vw"
-        loading="lazy"
-      />
+      <picture class="img-room">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/Room/imgseater-1_539.jpg  1x,
+            /img/Room/imgseater-1_1078.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/Room/imgseater-1_331.jpg 1x,
+            /img/Room/imgseater-1_662.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            /img/Room/imgseater-1_335.jpg 1x,
+            /img/Room/imgseater-1_670.jpg 2x
+          "
+        />
+        <img
+          src="/img/Room/imgseater-1_335.jpg"
+          alt="img-room"
+          width="539"
+          height="762"
+          loading="lazy"
+        />
+      </picture>
     </li>
     <li class="list-img-room bathroom">
-      <img
-        class="img-bathroom"
-        src="./img/Restaurant/img-chief_511.jpg"
-        alt="img-bathroom"
-        srcset="
-          ./img/Room/imgseater-2_158.jpg 158w,
-          ./img/Room/imgseater-2_223.jpg 223w,
-          ./img/Room/imgseater-2_316.jpg 316w,
-          ./img/Room/imgseater-2_387.jpg 387w,
-          ./img/Room/imgseater-2_446.jpg 446w,
-          ./img/Room/imgseater-2_774.jpg 774w
-        "
-        sizes="(min-width: 1440px) 387px, (min-width: 768px) 223px, (min-width: 375px) 158px, 100vw"
-        loading="lazy"
-      />
+      <picture class="img-bathroom">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/Room/imgseater-2_387.jpg 1x,
+            /img/Room/imgseater-2_774.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/Room/imgseater-2_223.jpg 1x,
+            /img/Room/imgseater-2_446.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            /img/Room/imgseater-2_158.jpg 1x,
+            /img/Room/imgseater-2_316.jpg 2x
+          "
+        />
+        <img
+          src="/img/Room/imgseater-2_158.jpg"
+          alt="img-bathroom"
+          width="539"
+          height="762"
+          loading="lazy"
+        />
+      </picture>
     </li>
     <li class="list-img-room kitchenroom">
-      <img
-        class="img-kitchenroom"
-        src="./img/Restaurant/img-chief_511.jpg"
-        alt="img-kitchenroom"
-        srcset="
-          ./img/Room/imgseater-3_158.jpg 158w,
-          ./img/Room/imgseater-3_316.jpg 316w,
-          ./img/Room/imgseater-3_341.jpg 341w,
-          ./img/Room/imgseater-3_386.jpg 386w,
-          ./img/Room/imgseater-3_682.jpg 682w,
-          ./img/Room/imgseater-3_772.jpg 772w
-        "
-        sizes="(min-width: 1440px) 386px, (min-width: 768px) 341px, (min-width: 375px) 158px, 100vw"
-        loading="lazy"
-      />
+      <picture class="img-kitchenroom">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/Room/imgseater-3_386.jpg 1x,
+            /img/Room/imgseater-3_772.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/Room/imgseater-3_341.jpg 1x,
+            /img/Room/imgseater-3_682.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            /img/Room/imgseater-3_158.jpg 1x,
+            /img/Room/imgseater-3_316.jpg 2x
+          "
+        />
+        <img
+          src="/img/Room/imgseater-2_158.jpg"
+          alt="img-kitchenroom"
+          width="539"
+          height="762"
+          loading="lazy"
+        />
+      </picture>
     </li>
   </ul>
   <div class="flex-desktop">

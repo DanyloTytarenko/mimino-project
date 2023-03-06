@@ -15,12 +15,15 @@
 }
 
 .img-room {
+  display: block;
   max-width: 335px;
 }
 .img-bathroom {
+  display: block;
   max-width: 158px;
 }
 .img-kitchenroom {
+  display: block;
   max-width: 158px;
 }
 
@@ -121,7 +124,6 @@
   margin-bottom: 32px;
 }
 .text-four {
-  font-family: var(--regular);
   text-transform: uppercase;
   margin-bottom: 28px;
   font-size: 14px;
@@ -157,9 +159,8 @@
   display: flex;
   border: 0.8px solid #121212;
   border-radius: 32px;
-  padding: 8px 24px;
+  padding: 8px 18px;
   background-color: transparent;
-  font-family: var(--regular);
   font-size: 14px;
   line-height: 1.71;
   text-transform: uppercase;
@@ -170,6 +171,16 @@
   color: #f7f7f7;
   background-color: #121212;
   border: 0.8px solid #f7f7f7;
+}
+@media screen and (min-width: 768px) {
+  .button-four {
+    padding: 8px 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .button-four {
+    padding: 9px 24px;
+  }
 }
 .block-button {
   display: flex;
