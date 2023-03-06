@@ -1,0 +1,75 @@
+.amenities {
+    background-color: #121212;
+}
+
+
+.amenities-list {
+    padding-top: 40px;
+    margin-bottom: 64px;
+}
+
+.amenities-item:not(:last-child) {
+   margin-bottom: 40px;
+}
+
+.amenities-title {
+    margin-bottom: 28px;
+    font-family: var(--bold);
+    font-size: 28px;
+    line-height: 1.14;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+}
+.amenities-sub-list {
+    padding-left: 20px;
+}
+
+.amenities-sub-item {
+    list-style: disc;
+    font-family: var(--regular);
+    font-size: 14px;
+    line-height: 1.29;
+
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+}
+
+.content-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 32px;
+    height: 333px;
+}
+
+.content-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+}
+
+.content-img-bottom {
+    width: 259px;
+}
+
+.content-top {
+    position: absolute;
+    right: 128px;
+    top: 144px;
+}
+
+.content-img-top {
+    width: 207px;
+}
+
+.btn_room{
+    margin-top: 0;
+    margin-bottom: 64px;
+}
