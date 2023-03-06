@@ -1,9 +1,9 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-}
+} */
 
 
 .section {
@@ -70,6 +70,7 @@
         margin-bottom: 0;
         flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: center;
     }
 }
 .triple-room-title {
