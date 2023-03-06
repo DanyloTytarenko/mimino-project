@@ -15,9 +15,7 @@
    
     column-gap: 20px;
 } */
-    img{
-    max-width: none;
-}    
+    
  /* .img {
     display: block;
     height: auto;
@@ -261,6 +259,9 @@
     .review-alexander{
         left: -107px;  
     }
+    img{
+        max-width: none;
+    }    
     .img-2{
         width: 439px;
         height: 219px;
