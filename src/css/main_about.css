@@ -104,7 +104,7 @@
 }
 .review-maria{
     position: absolute;
-    right: 0px;
+    left: 123px;
     bottom: 123px;
 }
 .review-alexander{
@@ -130,12 +130,14 @@
     padding-left: 14px;
     padding-top: 10px;
     padding-bottom: 10px;
+    align-items: center;
 }
 .alexander-container{
     padding-left: 14px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
+    align-items: center;
     justify-content: start;
     flex-direction: row;
     gap: 12px;
@@ -143,20 +145,20 @@
 .review-text{
     font-family: var(--medium);
     font-size: 14px;
-    line-height: 1;
+    /* line-height: 1; */
     color: #f6f6f6f6;
 }
 .review-rating{
     font-family: var(--medium);
     font-size: 12px;
-    line-height: 15.96;
+    /* line-height: 15.96; */
     color: #f6f6f6f6;
 
 }
 .review-rating-text{
     /* font-family: var(--regular); */
     font-size: 12px;
-    line-height: 15.96;
+    /* line-height: 15.96; */
     color: #575757;
   
    
@@ -266,4 +268,5 @@
         width: 439px;
         height: 219px;
     }
+    
 } 
