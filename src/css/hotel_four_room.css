@@ -163,6 +163,7 @@
   background-color: transparent;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   transition: var(--transition);
 }
