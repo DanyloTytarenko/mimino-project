@@ -1,0 +1,165 @@
+.rest-hero-section {
+    padding-top: 40px;
+    padding-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .rest-hero-section {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rest-hero-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.rest-hero-left {
+margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .rest-hero-left {
+        margin-bottom: 54px;
+    }
+}
+
+.rest-hero-title {
+    margin-bottom: 24px;
+
+    font-size: 40px;
+    line-height: calc(40 / 40);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .rest-hero-title {
+        margin-bottom: 32px;
+
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rest-hero-title {
+        font-size: 90px;
+    }
+}
+
+.rest-hero-list {
+    display: flex;
+    gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .rest-hero-list {
+        gap: 14px;
+    }
+}
+
+.rest-hero-btn {
+    min-width: 117px;
+    padding: 8px 18px;
+
+    font-family: inherit;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 0.8px solid;
+    border-radius: 32px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rest-hero-btn:hover,
+.rest-hero-btn:focus {
+    color: #F7F7F7;
+    background-color: #121212;
+}
+
+@media screen and (min-width: 768px) {
+    .rest-hero-btn {
+        padding: 8px 24px;
+
+        line-height: calc(24 / 14);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rest-hero-btn {
+        padding: 9px 24px;
+
+        font-size: 18px;
+        line-height: calc(24 / 18);
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .rest-hero-txt.desk {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rest-hero-wrap {
+        display: flex;
+        gap: 181px;
+    }
+
+    .rest-hero-left {
+        display: flex;
+        flex-direction: column;
+        padding-top: 174px;
+    }
+
+    .rest-hero-txt.desk {
+        margin-top: auto;
+    }
+}
+
+.rest-hero-img {
+    width: 250px;
+    height: 429px;
+}
+
+@media screen and (min-width: 768px) {
+    .rest-hero-img {
+        width: 436px;
+        height: 548px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rest-hero-img {
+        height: 580px;
+    }
+}
+
+.rest-hero-txt {
+    width: 338px;
+
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.rest-hero-txt.mob {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+    .rest-hero-txt.mob {
+        display: none;
+    }
+}
+
+.rest-hero-ital {
+    font-family: var(--regular-italic);
+}
