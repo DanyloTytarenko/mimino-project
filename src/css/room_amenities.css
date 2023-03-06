@@ -70,7 +70,7 @@
 
 .amenities-sub-item {
     list-style: disc;
-    font-family: var(--regular);
+ /*   font-family: var(--regular);*/
     font-size: 14px;
     line-height: 1.29;
 
@@ -103,10 +103,12 @@
     position: absolute;
     right: 0;
     top: 0;
-
-
 }
-
+@media screen and (min-width:1440px) {
+    .content-bottom {
+        top: -120px;
+    }
+}
 .content-img-bottom {
     width: 259px;
 }
@@ -140,7 +142,7 @@
 @media screen and (min-width:1440px) {
     .content-top {
         right: 409px;
-        top: 208px;
+        top: 88px;
     }
 }
 
@@ -162,23 +164,31 @@
 .btn_room{
     margin-top: 0;
     margin-bottom: 64px;
+    padding: 8px 40px;
     position: absolute;
     top: 365px;
     left: 100px;
+
+    line-height: 1.29;
 }
 
 @media screen and (min-width:768px) {
     .btn_room {
         margin-bottom: 0;
+        padding: 8px 24px;
         position: absolute;
         top: 371px;
         left: 0;
+
+        line-height: 1.71;
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1440px) {
     .btn_room {
-        top: 459px;
+        top: 339px;
         left: 560px;
+        font-size: 18px;
+        line-height: 1.33;
     }
 }
