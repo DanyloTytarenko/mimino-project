@@ -169,19 +169,17 @@ select{
 
           background-image: url(../img/modal-arrow.svg);
           background-position:
-              calc(100% - 0px) calc(0em),
+              calc(100% - 0px) 0,
               calc(100% - 15px) calc(1em + 2px);
 
               background-size: 20px 20px;
             background-repeat: no-repeat;
 }
-input[type="date"]::-webkit-calendar-picker-indicator::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url(../img/modal-arrow.svg);
-  background-size: cover;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url(../img/modal-arrow.svg) no-repeat center;
+  background-size: 20px 20px;
 }
 @media screen and (max-width: 375px){
   .modal {
