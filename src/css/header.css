@@ -164,13 +164,16 @@ body {
  }
 }
 
-.menu-toggle .menu-close {
+.menu-toggle .menu-close,
+.menu-toggle .menu-close-dark {
  display: none;
 }
-.menu-toggle.is-open .menu-close {
+.menu-toggle.is-open .menu-close,
+.menu-toggle.is-open .menu-close-dark {
  display: block;
 }
-.menu-toggle.is-open .menu-icon {
+.menu-toggle.is-open .menu-icon,
+.menu-toggle.is-open .menu-icon-dark {
  display: none;
 }
 
@@ -181,7 +184,8 @@ body {
  }
 }
 
-.social-icon {
+.social-icon,
+.social-icon-dark {
  fill: transparent;
 }
 
@@ -189,6 +193,12 @@ body {
 .menu-close,
 .social-icon {
  stroke: rgb(246, 246, 246);
+}
+
+.menu-icon-dark,
+.menu-close-dark,
+.social-icon-dark {
+ stroke: rgb(18, 18, 18);
 }
 
 .logo,
