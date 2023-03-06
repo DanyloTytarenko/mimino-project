@@ -16,21 +16,13 @@
     }
 }
 
-.hotel-hero-container {
-    max-width: 375px;
+.hotel-hero-left {
+margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .hotel-hero-container.container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .hotel-hero-container.container {
-        max-width: 1440px;
+    .hotel-hero-left {
+        margin-bottom: 54px;
     }
 }
 
@@ -71,7 +63,6 @@
 .hotel-hero-btn {
     min-width: 117px;
     padding: 8px 18px;
-    margin-bottom: 40px;
 
     font-family: inherit;
     font-size: 14px;
@@ -94,9 +85,7 @@
 
 @media screen and (min-width: 768px) {
     .hotel-hero-btn {
-        min-width: 129px;
         padding: 8px 24px;
-        margin-bottom: 54px;
 
         line-height: calc(24 / 14);
     }
@@ -104,7 +93,6 @@
 
 @media screen and (min-width: 1440px) {
     .hotel-hero-btn {
-        width: 172px;
         padding: 9px 24px;
 
         font-size: 18px;
@@ -156,7 +144,6 @@
 .hotel-hero-txt {
     width: 338px;
 
-    font-family: var(--regular-italic);
     font-size: 14px;
     line-height: calc(18 / 14);
     letter-spacing: 0.05em;
@@ -171,4 +158,8 @@
     .hotel-hero-txt.mob {
         display: none;
     }
+}
+
+.hotel-hero-ital {
+    font-family: var(--regular-italic);
 }
