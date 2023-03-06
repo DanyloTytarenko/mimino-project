@@ -1,27 +1,27 @@
-.container{
+/* .container{
     width: 335px;
     margin: 0 auto;
  
-}
-body{
+}  */
+  /* body{
     margin: 0;
-}
-.about-complex{
+}   */
+/* .about-complex{
     padding-top: 64px;
     padding-bottom: 64px; 
     
-}
-.complex-container{
+} */
+/* .complex-container{
    
     column-gap: 20px;
-}
-img{
+} */
+    img{
     max-width: none;
-}
-.img {
+}    
+ /* .img {
     display: block;
     height: auto;
-  }
+  }   */
 
 .img-container{
     position: relative;
@@ -40,9 +40,9 @@ img{
     height: 153px;
 }
 .section-subtitle{
-    font-family: var(--regular);
+    /* font-family: var(--regular);  */
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     color: #484848;
     margin-top: 32px;
     margin-bottom: 18px;
@@ -51,7 +51,7 @@ img{
 .section-text{
   font-family: var(--medium);
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.28;
   color: #121212;
   
 }
@@ -106,7 +106,7 @@ img{
 }
 .review-maria{
     position: absolute;
-    right: 0;
+    right: 0px;
     bottom: 123px;
 }
 .review-alexander{
@@ -145,20 +145,20 @@ img{
 .review-text{
     font-family: var(--medium);
     font-size: 14px;
-    line-height: 14px;
+    line-height: 1;
     color: #f6f6f6f6;
 }
 .review-rating{
     font-family: var(--medium);
     font-size: 12px;
-    line-height: 15,96px;
+    line-height: 15.96;
     color: #f6f6f6f6;
 
 }
 .review-rating-text{
-    font-family: var(--regular);
+    /* font-family: var(--regular); */
     font-size: 12px;
-    line-height: 15,96px;
+    line-height: 15.96;
     color: #575757;
   
    
@@ -174,12 +174,12 @@ img{
     flex-direction: column;
 }
 @media screen and (min-width: 768px){
-    .container{
+     .container{
         width: 704px;
         margin: 0 auto;
         flex-direction: column;
      
-    }
+    } 
     .img-2{
         position: absolute;
         top: 209px;
@@ -240,7 +240,7 @@ img{
     .container{
         width: 1376px;
         margin: 0 auto; 
-    }
+    } 
     .complex-wrapper{
         display: flex;
         gap: 364px;
