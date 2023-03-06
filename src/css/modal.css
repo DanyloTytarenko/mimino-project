@@ -70,15 +70,15 @@
   align-items: center;
   top: 14px;
   right: 14px;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background-color: transparent;
   border: none;
   transition: background-color var(--transition-duration) var(--const-transition),
   border var(--transition-duration) var(--const-transition);
   cursor: pointer;
-  stroke: white;
+  stroke: white;  
 }
 .modal-order-box-btn:hover,
 .modal-order-box-btn:focus {
@@ -175,7 +175,14 @@ select{
               background-size: 20px 20px;
             background-repeat: no-repeat;
 }
-
+input[type="date"]::-webkit-calendar-picker-indicator::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/modal-arrow.svg);
+  background-size: cover;
+}
 @media screen and (max-width: 375px){
   .modal {
       width: 95%;
@@ -189,7 +196,13 @@ select{
     max-width: 628px;
     padding: 32px 32px 60px;
   }
-  .form{
+  .modal-order-box-btn {
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+  }
+  .form, .form2, .form3, .form4, .form5{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
