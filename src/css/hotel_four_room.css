@@ -1,50 +1,10 @@
-.img-room {
-  max-width: 335px;
-}
-@media screen and (min-width: 768px) {
-  .img-room {
-    max-width: 331px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .img-room {
-    max-width: 539px;
-  }
-}
-
-.img-bathroom {
-  max-width: 158px;
-}
-@media screen and (min-width: 768px) {
-  .img-bathroom {
-    max-width: 223px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .img-bathroom {
-    max-width: 387px;
-  }
-}
-
-.img-kitchenroom {
-  max-width: 158px;
-}
-@media screen and (min-width: 768px) {
-  .img-kitchenroom {
-    max-width: 341px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .img-kitchenroom {
-    max-width: 386px;
-  }
-}
 .container {
   max-width: 335px;
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 704px;
+    height: 808px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -53,6 +13,76 @@
   .container {
     max-width: 1376px;
   }
+}
+
+.img-room {
+  max-width: 335px;
+}
+.img-bathroom {
+  max-width: 158px;
+}
+.img-kitchenroom {
+  max-width: 158px;
+}
+
+@media screen and (min-width: 768px) {
+  .img-room {
+    max-width: 331px;
+  }
+  .img-bathroom {
+    max-width: 223px;
+  }
+  .img-kitchenroom {
+    max-width: 341px;
+  }
+  .room {
+    order: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .bathroom {
+    order: 0;
+    position: absolute;
+    top: 0;
+    left: 118px;
+  }
+  .kitchenroom {
+    order: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .img-room {
+    max-width: 539px;
+  }
+  .img-bathroom {
+    max-width: 387px;
+  }
+  .img-kitchenroom {
+    max-width: 386px;
+  }
+  .room {
+    order: 2;
+    position: relative;
+  }
+  .bathroom {
+    order: 3;
+    position: relative;
+    left: 0;
+  }
+  .kitchenroom {
+    order: 1;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1440px) {
 }
 .block-img-room {
   display: flex;
@@ -65,11 +95,15 @@
   .block-img-room {
     row-gap: 32px;
     column-gap: 32px;
+    position: relative;
+    height: 468px;
   }
 }
 @media screen and (min-width: 1440px) {
   .block-img-room {
     max-width: 1440px;
+    align-items: center;
+    height: 762px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -130,6 +164,13 @@
   font-size: 14px;
   line-height: 1.71;
   text-transform: uppercase;
+  transition: var(--transition);
+}
+.button-four:hover,
+.button-four:focus {
+  color: #f7f7f7;
+  background-color: #121212;
+  border: 0.8px solid #f7f7f7;
 }
 .block-button {
   display: flex;
