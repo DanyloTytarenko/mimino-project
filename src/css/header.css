@@ -46,7 +46,6 @@ body {
  }
 }
 
-
 @media screen and (min-width: 768px) {
  .header,
  .header-light {
@@ -182,9 +181,9 @@ body {
  }
 }
 
-/* .social-icon {
+.social-icon {
  fill: transparent;
-} */
+}
 
 .menu-icon,
 .menu-close,
