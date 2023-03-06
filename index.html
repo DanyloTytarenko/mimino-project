@@ -11,25 +11,142 @@
     />
     
     <script type="module" crossorigin src="/mimino-project/assets/index-90a859a6.js"></script>
-    <link rel="stylesheet" href="/mimino-project/assets/styles-a03854ad.css">
+    <link rel="stylesheet" href="/mimino-project/assets/styles-c3d6253e.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="index.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="hotel.html" class="nav-link">Hotel</a>
-      </li>
+  <div class="container">
+    <div class="header-wrapper">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link current" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../hotel.html">Hotel</a>
+          </li>
 
-      <li class="nav-item">
-        <a href="restaurant.html" class="nav-link">Restaurant</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../restaurant.html">Restaurant</a>
+          </li>
+        </ul>
+
+        <button
+          class="menu-toggle"
+          data-menu-button
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg
+            class="mobile-icon"
+            aria-label="mobile-menu"
+            width="21"
+            height="14"
+          >
+            <use class="menu-close" href="/mimino-project/assets/icons-e93226c3.svg#close"></use>
+            <use class="menu-icon" href="/mimino-project/assets/icons-e93226c3.svg#burger"></use>
+          </svg>
+        </button>
+        <a class="logo" href="./index.html">
+          <span class="header-logo">Mimino</span>
+          <span class="header-logo-light">restaurant-hotel complex</span></a
+        >
+      </nav>
+      <ul class="social-list list">
+        <li class="menu-social-item">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          </a>
+          <svg class="menu-social-icon" width="20px" height="20px">
+            <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#instagram"></use>
+          </svg>
+        </li>
+        <li class="menu-social-item">
+          <a
+            href="https://uk-ua.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          </a>
+          <svg class="menu-social-icon" width="20px" height="20px">
+            <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#facebook"></use>
+          </svg>
+        </li>
+        <li class="menu-social-item">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="n_opener noreferrer"
+          >
+          </a>
+          <svg class="menu-social-icon" width="20px" height="20px">
+            <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#twitter"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="menu-container" id="mobile-menu" data-menu>
+  <div class="mobile-menu">
+    <ul class="mobile-list list">
+      <li class="mobile-menu-item">
+        <a class="menu-navlink" href="../index.html">Home</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="menu-navlink" href="../hotel.html">Hotel</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="menu-navlink" href="../restaurant.html">Restaurant</a>
       </li>
     </ul>
-  </nav>
-</header>
+  </div>
+  <div class="social-menu">
+    <ul class="mobile-social-list list">
+      <li class="menu-social-item">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
+        <svg class="menu-social-icon" width="20px" height="20px">
+          <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#instagram"></use>
+        </svg>
+      </li>
+      <li class="menu-social-item">
+        <a
+          href="https://uk-ua.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
+        <svg class="menu-social-icon" width="20px" height="20px">
+          <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#facebook"></use>
+        </svg>
+      </li>
+      <li class="menu-social-item">
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="n_opener noreferrer"
+        >
+        </a>
+        <svg class="menu-social-icon" width="20px" height="20px">
+          <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#twitter"></use>
+        </svg>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script src="../js/mobile-menu.js" defer></script>
 
 
     <main>
@@ -62,6 +179,239 @@
 
       
       
+    <section class="main-restaurant container">
+      <div class="main-restaurant-title-text">
+        <h2 class="main-restaurant-title">RESTAURANT</h2>
+        <p class="main-restaurant-text">
+          Relax and unwind with our delicious offerings, available any time of
+          day.
+        </p>
+      </div>
+
+      <ul class="main-restaurant-list">
+        <li class="main-restaurant-item">
+          <img
+            class="restaurant-photo"
+            srcset="
+              ../img/Main/main-restaurant/img-1_157m.jpg 157w,
+              ../img/Main/main-restaurant/img-1_314m.jpg 314w,
+              ../img/Main/main-restaurant/img-1_336t.jpg 336w,
+              ../img/Main/main-restaurant/img-1_672t.jpg 672w
+            "
+            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+            src="../img/Main/main-restaurant/img-1_157m.jpg"
+            alt="coctail"
+            width="336"
+            height="309"
+            loading="lazy"
+          />
+        </li>
+        <li class="main-restaurant-item">
+          <img
+            class="restaurant-photo"
+            srcset="
+              ../img/Main/main-restaurant/img-2_157m.jpg 157w,
+              ../img/Main/main-restaurant/img-2_314m.jpg 314w,
+              ../img/Main/main-restaurant/img-2_336t.jpg 336w,
+              ../img/Main/main-restaurant/img-2_672t.jpg 672w
+            "
+            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+            src="../img/Main/main-restaurant/img-2_157m.jpg"
+            alt="chef"
+            width="336"
+            height="309"
+            loading="lazy"
+          />
+        </li>
+        <li class="main-restaurant-item-desktop">
+          <img
+            class="restaurant-photo"
+            srcset="
+              ../img/Main/main-restaurant/coctail_266d.jpg 266w,
+              ../img/Main/main-restaurant/coctail_532d.jpg 532w
+            "
+            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+            src="../img/Main/main-restaurant/coctail_266d.jpg"
+            alt="coctail"
+            width="266"
+            height="309"
+            loading="lazy"
+          />
+        </li>
+        <li class="main-restaurant-item-desktop">
+          <img
+            class="restaurant-photo"
+            srcset="
+              ../img/Main/main-restaurant/croissant_266d.jpg 266w,
+              ../img/Main/main-restaurant/croissant_532d.jpg 532w
+            "
+            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+            src="../img/Main/main-restaurant/croissant_266d.jpg"
+            alt="croissant"
+            width="266"
+            height="309"
+            loading="lazy"
+          />
+        </li>
+        <li class="main-restaurant-item-desktop">
+          <img
+            class="restaurant-photo"
+            srcset="
+              ../img/Main/main-restaurant/wine_266d.jpg 266w,
+              ../img/Main/main-restaurant/wine_532d.jpg 532w
+            "
+            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+            src="../img/Main/main-restaurant/wine_266d.jpg"
+            alt="wine"
+            width="266"
+            height="309"
+            loading="lazy"
+          />
+        </li>
+        <li class="main-restaurant-item-desktop">
+          <img
+            class="restaurant-photo"
+            srcset="
+              ../img/Main/main-restaurant/chef_266d.jpg 266w,
+              ../img/Main/main-restaurant/chef_532d.jpg 532w
+            "
+            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+            src="../img/Main/main-restaurant/chef_266d.jpg"
+            alt="chef"
+            width="266"
+            height="309"
+            loading="lazy"
+          />
+        </li>
+        <li class="main-restaurant-item-desktop">
+          <img
+            class="restaurant-photo"
+            srcset="
+              ../img/Main/main-restaurant/fish_266d.jpg 266w,
+              ../img/Main/main-restaurant/fish_532d.jpg 532w
+            "
+            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+            src="../img/Main/main-restaurant/fish_266d.jpg"
+            alt="fish"
+            width="266"
+            height="309"
+            loading="lazy"
+          />
+        </li>
+
+        <!-- Slider pictures -->
+
+        <!-- <li class="main-restaurant-item-slider">
+        <img
+        class="restaurant-photo"
+        srcset="
+        ../img/Main/main-restaurant/img-3_157m.jpg 157w,
+        ../img/Main/main-restaurant/img-3_314m.jpg 314w,
+        ../img/Main/main-restaurant/img-3_336t.jpg 336w,
+        ../img/Main/main-restaurant/img-3_672t.jpg 672w,
+        ../img/Main/main-restaurant/img-3_266d.jpg 266w,
+        ../img/Main/main-restaurant/img-3_532d.jpg 532w"
+        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+        src="../img/Main/main-restaurant/img-3_157m.jpg"
+        alt="pasta"
+        width="336"
+        height="309"
+        loading="lazy"
+        />
+    </li>
+    <li class="main-restaurant-item-slider">
+        <img
+        class="restaurant-photo"
+        srcset="
+        ../img/Main/main-restaurant/img-4_157m.jpg 157w,
+        ../img/Main/main-restaurant/img-4_314m.jpg 314w,
+        ../img/Main/main-restaurant/img-4_336t.jpg 336w,
+        ../img/Main/main-restaurant/img-4_672t.jpg 672w,
+        ../img/Main/main-restaurant/img-4_266d.jpg 266w,
+        ../img/Main/main-restaurant/img-4_532d.jpg 532w"
+        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+        src="../img/Main/main-restaurant/img-4_157m.jpg"
+        alt="girl-eats"
+        width="336"
+        height="309"
+        loading="lazy"
+        />
+    </li>
+    <li class="main-restaurant-item-slider">
+        <img
+        class="restaurant-photo"
+        srcset="
+        ../img/Main/main-restaurant/img-5_157m.jpg 157w,
+        ../img/Main/main-restaurant/img-5_314m.jpg 314w,
+        ../img/Main/main-restaurant/img-5_336t.jpg 336w,
+        ../img/Main/main-restaurant/img-5_672t.jpg 672w,
+        ../img/Main/main-restaurant/img-5_266d.jpg 266w,
+        ../img/Main/main-restaurant/img-5_532d.jpg 532w"
+        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+        src="../img/Main/main-restaurant/img-5_157m.jpg"
+        alt="shrimp"
+        width="336"
+        height="309"
+        loading="lazy"
+        />
+    </li>
+    <li class="main-restaurant-item-slider">
+        <img
+        class="restaurant-photo"
+        srcset="
+        ../img/Main/main-restaurant/img-6_157m.jpg 157w,
+        ../img/Main/main-restaurant/img-6_314m.jpg 314w,
+        ../img/Main/main-restaurant/img-6_336t.jpg 336w,
+        ../img/Main/main-restaurant/img-6_672t.jpg 672w,
+        ../img/Main/main-restaurant/img-6_266d.jpg 266w,
+        ../img/Main/main-restaurant/img-6_532d.jpg 532w"
+        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+        src="../img/Main/main-restaurant/img-6_157m.jpg"
+        alt="drink"
+        width="336"
+        height="309"
+        loading="lazy"
+        />
+    </li>
+    <li class="main-restaurant-item-slider">
+        <img
+        class="restaurant-photo"
+        srcset="
+        ../img/Main/main-restaurant/img-7_157m.jpg 157w,
+        ../img/Main/main-restaurant/img-7_314m.jpg 314w,
+        ../img/Main/main-restaurant/img-7_336t.jpg 336w,
+        ../img/Main/main-restaurant/img-7_672t.jpg 672w,
+        ../img/Main/main-restaurant/img-7_266d.jpg 266w,
+        ../img/Main/main-restaurant/img-7_532d.jpg 532w"
+        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+        src="../img/Main/main-restaurant/img-7_157m.jpg"
+        alt="asparagus"
+        width="336"
+        height="309"
+        loading="lazy"
+        />
+    </li> -->
+      </ul>
+
+      <ul class="main-restaurant-button-list">
+        <li class="main-restaurant-button-item">
+          <button class="main-restaurant-button button" type="submit">
+            book a table
+          </button>
+        </li>
+        <li class="main-restaurant-button-item">
+          <a
+            class="btn-view-menu button"
+            href="../restaurant.html"
+            target="_blank"
+            >view the menu
+          </a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
+
       
       
       <section class="container section-location">
@@ -116,21 +466,21 @@
       <li class="footer-item">
         <a href="https://www.instagram.com/">
           <svg class="footer-icon">
-            <use href="/mimino-project/assets/icons-97c79d78.svg#instagram"></use>
+            <use href="/mimino-project/assets/icons-e93226c3.svg#instagram"></use>
           </svg>
         </a>
       </li>
       <li class="footer-item">
         <a href="https://www.facebook.com/">
           <svg class="footer-icon">
-            <use href="/mimino-project/assets/icons-97c79d78.svg#facebook"></use>
+            <use href="/mimino-project/assets/icons-e93226c3.svg#facebook"></use>
           </svg>
         </a>
       </li>
       <li class="footer-item">
         <a href="https://www.twitter.com/">
           <svg class="footer-icon">
-            <use href="/mimino-project/assets/icons-97c79d78.svg#twitter"></use>
+            <use href="/mimino-project/assets/icons-e93226c3.svg#twitter"></use>
           </svg>
         </a>
       </li>
