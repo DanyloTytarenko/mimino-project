@@ -42,11 +42,17 @@
   opacity: 1;
   visibility: visible;
 }
-
+.active body{
+  overflow: hidden;
+}
 
 .modal-title{
+  font-family: 'Sans Medium';
   margin-bottom: 40px;
   text-transform: uppercase;
+}
+.modal-title span{
+  font-family: 'Sans Medium Italic';
 }
 
 .modal-text{
@@ -70,13 +76,15 @@
   background-color: transparent;
   border: none;
   transition: background-color var(--transition-duration) var(--const-transition),
-        border var(--transition-duration) var(--const-transition);
-        cursor: pointer;
+  border var(--transition-duration) var(--const-transition);
+  cursor: pointer;
+  stroke: white;
 }
 .modal-order-box-btn:hover,
 .modal-order-box-btn:focus {
-  background-color: var(--accent-color);
+  background-color: white;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    stroke: #121212;
 }
 
 .form-field{
@@ -92,7 +100,7 @@
   position: absolute;
   top: 0;
   display: block;
-  font-weight: 500;
+  font-family: var(--medium);
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.02em;
@@ -103,6 +111,7 @@
   display: none;
 }
 .form-field > input, select{
+  font-family: var(--medium);
   background: transparent;
     border-top: none;
     border-left: none;
@@ -115,7 +124,7 @@
 
 }
 .form-text{
-  font-weight: 400;
+font-family: var(--regular);
     font-size: 8px;
     line-height: 12px;
     letter-spacing: 0.18em;
@@ -135,6 +144,7 @@ option{
 .form-button{
   padding: 14px 48px;
   border: 0.8px solid #F7F7F7;
+  font-family: var(--regular);
   background-color: transparent;
   color: #F7F7F7;
   text-transform: uppercase;
@@ -157,7 +167,7 @@ select{
       -webkit-appearance: none;
       -moz-appearance: none;
 
-          background-image: url(/modal-arrow.svg);
+          background-image: url(../img/modal-arrow.svg);
           background-position:
               calc(100% - 0px) calc(0em),
               calc(100% - 15px) calc(1em + 2px);

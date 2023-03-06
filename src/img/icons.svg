@@ -11,7 +11,7 @@
         d="M1.778 16h42.667M1.778 1.778h42.667M1.778 30.222h28.444" />
     </symbol>
     <symbol id="close" viewBox="0 0 32 32">
-      <path stroke="black" fill="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.6"
+      <path fill="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.6"
         d="M29.333 2.667 2.666 29.334m.001-26.667 26.667 26.667" />
     </symbol>
     <symbol id="twitter" viewBox="0 0 38 32">
