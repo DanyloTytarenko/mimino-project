@@ -5,7 +5,13 @@
         <h1 class="rest-hero-title">Restaurant</h1>
         <ul class="rest-hero-list">
           <li>
-            <button class="rest-hero-btn" type="button">book a table</button>
+            <button
+              class="rest-hero-btn js-open-modal"
+              data-modal="2"
+              type="button"
+            >
+              book a table
+            </button>
           </li>
           <li>
             <button class="rest-hero-btn" type="button">View a menu</button>
@@ -17,8 +23,8 @@
           something for everyone.
         </p>
       </div>
-      <div>
-        <ul>
+      <div class="slide-wrapper">
+        <ul class="hero-slider">
           <li>
             <picture>
               <source
@@ -125,6 +131,24 @@
             </picture>
           </li>
         </ul>
+        <div class="btn-wrap-hero">
+          <button class="prev-btn">
+            <svg class="prev-btn-icon">
+              <use
+                class="prev-btn-icon-content"
+                href="../img/icons.svg#prev"
+              ></use>
+            </svg>
+          </button>
+          <button class="next-btn">
+            <svg class="next-btn-icon">
+              <use
+                class="next-btn-icon-content"
+                href="../img/icons.svg#next"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
     <p class="rest-hero-txt mob">
