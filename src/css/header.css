@@ -39,7 +39,10 @@ body {
 
 @media screen and (min-width: 1440px) {
   .header {
-    background-image: url(../img/Hotel/image.jpg);
+    position: absolute;
+    background-color: transparent;
+
+    /* background-image: url(../img/Hotel/image.jpg); */
     background-position: right top;
     background-size: 542px;
     background-repeat: no-repeat;
