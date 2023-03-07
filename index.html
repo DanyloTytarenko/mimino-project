@@ -9,9 +9,12 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+
     
-    <script type="module" crossorigin src="/mimino-project/assets/index-90a859a6.js"></script>
-    <link rel="stylesheet" href="/mimino-project/assets/styles-b09bc71f.css">
+    
+    
+    <script type="module" crossorigin src="/mimino-project/assets/slick-99de3bc7.js"></script>
+    <link rel="stylesheet" href="/mimino-project/assets/slick-0518c9e6.css">
   </head>
   <body>
     <header class="header">
@@ -44,8 +47,8 @@
             width="21"
             height="14"
           >
-            <use class="menu-close" href="/mimino-project/assets/icons-e93226c3.svg#close"></use>
-            <use class="menu-icon" href="/mimino-project/assets/icons-e93226c3.svg#burger"></use>
+            <use class="menu-close" href="/mimino-project/assets/icons-a72497a1.svg#close"></use>
+            <use class="menu-icon" href="/mimino-project/assets/icons-a72497a1.svg#burger"></use>
           </svg>
         </button>
         <a class="logo" href="./index.html">
@@ -62,7 +65,7 @@
           >
           </a>
           <svg class="menu-social-icon" width="20px" height="20px">
-            <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#instagram"></use>
+            <use class="social-icon" href="/mimino-project/assets/icons-a72497a1.svg#instagram"></use>
           </svg>
         </li>
         <li class="menu-social-item">
@@ -73,7 +76,7 @@
           >
           </a>
           <svg class="menu-social-icon" width="20px" height="20px">
-            <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#facebook"></use>
+            <use class="social-icon" href="/mimino-project/assets/icons-a72497a1.svg#facebook"></use>
           </svg>
         </li>
         <li class="menu-social-item">
@@ -84,7 +87,7 @@
           >
           </a>
           <svg class="menu-social-icon" width="20px" height="20px">
-            <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#twitter"></use>
+            <use class="social-icon" href="/mimino-project/assets/icons-a72497a1.svg#twitter"></use>
           </svg>
         </li>
       </ul>
@@ -117,7 +120,7 @@
         >
         </a>
         <svg class="menu-social-icon" width="20px" height="20px">
-          <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#instagram"></use>
+          <use class="social-icon" href="/mimino-project/assets/icons-a72497a1.svg#instagram"></use>
         </svg>
       </li>
       <li class="menu-social-item">
@@ -128,7 +131,7 @@
         >
         </a>
         <svg class="menu-social-icon" width="20px" height="20px">
-          <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#facebook"></use>
+          <use class="social-icon" href="/mimino-project/assets/icons-a72497a1.svg#facebook"></use>
         </svg>
       </li>
       <li class="menu-social-item">
@@ -139,7 +142,7 @@
         >
         </a>
         <svg class="menu-social-icon" width="20px" height="20px">
-          <use class="social-icon" href="/mimino-project/assets/icons-e93226c3.svg#twitter"></use>
+          <use class="social-icon" href="/mimino-project/assets/icons-a72497a1.svg#twitter"></use>
         </svg>
       </li>
     </ul>
@@ -150,18 +153,28 @@
 
 
     <main>
-      
-
       <section class="main-hero-section">
   <div class="main-hero-container container">
     <h1 class="main-hero-title">Mimino</h1>
     <div class="main-hero-wrap">
       <ul class="main-hero-list">
         <li>
-          <button class="main-hero-btn" type="button">book a room</button>
+          <button
+            class="main-hero-btn js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            book a room
+          </button>
         </li>
         <li>
-          <button class="main-hero-btn" type="button">book a table</button>
+          <button
+            class="main-hero-btn js-open-modal"
+            data-modal="2"
+            type="button"
+          >
+            book a table
+          </button>
         </li>
       </ul>
       <div class="main-hero-box">
@@ -358,7 +371,7 @@
   </div>
 
   <ul class="main-restaurant-list">
-    <li class="main-restaurant-item">
+    <li class="main-restaurant-item mob-slider">
       <img
         class="restaurant-photo"
         srcset="/mimino-project/assets/img-1_157m-a137d90b.jpg 157w, /mimino-project/assets/img-1_314m-d1e7d556.jpg 314w, /mimino-project/assets/img-1_336t-0f2d3bad.jpg 336w, /mimino-project/assets/img-1_672t-331812b8.jpg 672w"
@@ -370,7 +383,7 @@
         loading="lazy"
       />
     </li>
-    <li class="main-restaurant-item">
+    <li class="main-restaurant-item mob-slider">
       <img
         class="restaurant-photo"
         srcset="/mimino-project/assets/img-2_157m-b48d7b99.jpg 157w, /mimino-project/assets/img-2_314m-7552ea5f.jpg 314w, /mimino-project/assets/img-2_336t-163b838b.jpg 336w, /mimino-project/assets/img-2_672t-98a62034.jpg 672w"
@@ -382,7 +395,7 @@
         loading="lazy"
       />
     </li>
-    <li class="main-restaurant-item-desktop">
+    <li class="main-restaurant-item-desktop desk-slider">
       <img
         class="restaurant-photo"
         srcset="/mimino-project/assets/coctail_266d-99bd9504.jpg 266w, /mimino-project/assets/coctail_532d-4254efdd.jpg 532w"
@@ -394,7 +407,7 @@
         loading="lazy"
       />
     </li>
-    <li class="main-restaurant-item-desktop">
+    <li class="main-restaurant-item-desktop desk-slider">
       <img
         class="restaurant-photo"
         srcset="/mimino-project/assets/croissant_266d-f9a45c5a.jpg 266w, /mimino-project/assets/croissant_532d-462f0e12.jpg 532w"
@@ -406,7 +419,7 @@
         loading="lazy"
       />
     </li>
-    <li class="main-restaurant-item-desktop">
+    <li class="main-restaurant-item-desktop desk-slider">
       <img
         class="restaurant-photo"
         srcset="/mimino-project/assets/wine_266d-28568bc7.jpg 266w, /mimino-project/assets/wine_532d-1b89a0b9.jpg 532w"
@@ -418,7 +431,7 @@
         loading="lazy"
       />
     </li>
-    <li class="main-restaurant-item-desktop">
+    <li class="main-restaurant-item-desktop desk-slider">
       <img
         class="restaurant-photo"
         srcset="/mimino-project/assets/chef_266d-dd195cc4.jpg 266w, /mimino-project/assets/chef_532d-6cb451c1.jpg 532w"
@@ -430,7 +443,7 @@
         loading="lazy"
       />
     </li>
-    <li class="main-restaurant-item-desktop">
+    <li class="main-restaurant-item-desktop desk-slider">
       <img
         class="restaurant-photo"
         srcset="/mimino-project/assets/fish_266d-a6844781.jpg 266w, /mimino-project/assets/fish_532d-b5fb8cc0.jpg 532w"
@@ -445,101 +458,121 @@
 
     <!-- Slider pictures -->
 
-    <!-- <li class="main-restaurant-item-slider">
-        <img
+    <li class="main-restaurant-item-desktop">
+      <img
         class="restaurant-photo"
         srcset="
-        ../img/Main/main-restaurant/img-3_157m.jpg 157w,
-        ../img/Main/main-restaurant/img-3_314m.jpg 314w,
-        ../img/Main/main-restaurant/img-3_336t.jpg 336w,
-        ../img/Main/main-restaurant/img-3_672t.jpg 672w,
-        ../img/Main/main-restaurant/img-3_266d.jpg 266w,
-        ../img/Main/main-restaurant/img-3_532d.jpg 532w"
+          ../img/Main/main-restaurant/img-3_157m.jpg 157w,
+          ../img/Main/main-restaurant/img-3_314m.jpg 314w,
+          ../img/Main/main-restaurant/img-3_336t.jpg 336w,
+          ../img/Main/main-restaurant/img-3_672t.jpg 672w,
+          ../img/Main/main-restaurant/img-3_266d.jpg 266w,
+          ../img/Main/main-restaurant/img-3_532d.jpg 532w
+        "
         sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
         src="../img/Main/main-restaurant/img-3_157m.jpg"
         alt="pasta"
         width="336"
         height="309"
         loading="lazy"
-        />
+      />
     </li>
-    <li class="main-restaurant-item-slider">
-        <img
+    <li class="main-restaurant-item-desktop">
+      <img
         class="restaurant-photo"
         srcset="
-        ../img/Main/main-restaurant/img-4_157m.jpg 157w,
-        ../img/Main/main-restaurant/img-4_314m.jpg 314w,
-        ../img/Main/main-restaurant/img-4_336t.jpg 336w,
-        ../img/Main/main-restaurant/img-4_672t.jpg 672w,
-        ../img/Main/main-restaurant/img-4_266d.jpg 266w,
-        ../img/Main/main-restaurant/img-4_532d.jpg 532w"
+          ../img/Main/main-restaurant/img-4_157m.jpg 157w,
+          ../img/Main/main-restaurant/img-4_314m.jpg 314w,
+          ../img/Main/main-restaurant/img-4_336t.jpg 336w,
+          ../img/Main/main-restaurant/img-4_672t.jpg 672w,
+          ../img/Main/main-restaurant/img-4_266d.jpg 266w,
+          ../img/Main/main-restaurant/img-4_532d.jpg 532w
+        "
         sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
         src="../img/Main/main-restaurant/img-4_157m.jpg"
         alt="girl-eats"
         width="336"
         height="309"
         loading="lazy"
-        />
+      />
     </li>
-    <li class="main-restaurant-item-slider">
-        <img
+    <li class="main-restaurant-item-desktop">
+      <img
         class="restaurant-photo"
         srcset="
-        ../img/Main/main-restaurant/img-5_157m.jpg 157w,
-        ../img/Main/main-restaurant/img-5_314m.jpg 314w,
-        ../img/Main/main-restaurant/img-5_336t.jpg 336w,
-        ../img/Main/main-restaurant/img-5_672t.jpg 672w,
-        ../img/Main/main-restaurant/img-5_266d.jpg 266w,
-        ../img/Main/main-restaurant/img-5_532d.jpg 532w"
+          ../img/Main/main-restaurant/img-5_157m.jpg 157w,
+          ../img/Main/main-restaurant/img-5_314m.jpg 314w,
+          ../img/Main/main-restaurant/img-5_336t.jpg 336w,
+          ../img/Main/main-restaurant/img-5_672t.jpg 672w,
+          ../img/Main/main-restaurant/img-5_266d.jpg 266w,
+          ../img/Main/main-restaurant/img-5_532d.jpg 532w
+        "
         sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
         src="../img/Main/main-restaurant/img-5_157m.jpg"
         alt="shrimp"
         width="336"
         height="309"
         loading="lazy"
-        />
+      />
     </li>
-    <li class="main-restaurant-item-slider">
-        <img
+    <li class="main-restaurant-item-desktop">
+      <img
         class="restaurant-photo"
         srcset="
-        ../img/Main/main-restaurant/img-6_157m.jpg 157w,
-        ../img/Main/main-restaurant/img-6_314m.jpg 314w,
-        ../img/Main/main-restaurant/img-6_336t.jpg 336w,
-        ../img/Main/main-restaurant/img-6_672t.jpg 672w,
-        ../img/Main/main-restaurant/img-6_266d.jpg 266w,
-        ../img/Main/main-restaurant/img-6_532d.jpg 532w"
+          ../img/Main/main-restaurant/img-6_157m.jpg 157w,
+          ../img/Main/main-restaurant/img-6_314m.jpg 314w,
+          ../img/Main/main-restaurant/img-6_336t.jpg 336w,
+          ../img/Main/main-restaurant/img-6_672t.jpg 672w,
+          ../img/Main/main-restaurant/img-6_266d.jpg 266w,
+          ../img/Main/main-restaurant/img-6_532d.jpg 532w
+        "
         sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
         src="../img/Main/main-restaurant/img-6_157m.jpg"
         alt="drink"
         width="336"
         height="309"
         loading="lazy"
-        />
+      />
     </li>
-    <li class="main-restaurant-item-slider">
-        <img
+    <li class="main-restaurant-item-desktop">
+      <img
         class="restaurant-photo"
         srcset="
-        ../img/Main/main-restaurant/img-7_157m.jpg 157w,
-        ../img/Main/main-restaurant/img-7_314m.jpg 314w,
-        ../img/Main/main-restaurant/img-7_336t.jpg 336w,
-        ../img/Main/main-restaurant/img-7_672t.jpg 672w,
-        ../img/Main/main-restaurant/img-7_266d.jpg 266w,
-        ../img/Main/main-restaurant/img-7_532d.jpg 532w"
+          ../img/Main/main-restaurant/img-7_157m.jpg 157w,
+          ../img/Main/main-restaurant/img-7_314m.jpg 314w,
+          ../img/Main/main-restaurant/img-7_336t.jpg 336w,
+          ../img/Main/main-restaurant/img-7_672t.jpg 672w,
+          ../img/Main/main-restaurant/img-7_266d.jpg 266w,
+          ../img/Main/main-restaurant/img-7_532d.jpg 532w
+        "
         sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
         src="../img/Main/main-restaurant/img-7_157m.jpg"
         alt="asparagus"
         width="336"
         height="309"
         loading="lazy"
-        />
-    </li> -->
+      />
+    </li>
   </ul>
-
+  <div class="btn-wrap">
+    <button class="prev-btn">
+      <svg class="prev-btn-icon">
+        <use class="prev-btn-icon-content" href="../img/icons.svg#prev"></use>
+      </svg>
+    </button>
+    <button class="next-btn">
+      <svg class="next-btn-icon">
+        <use class="next-btn-icon-content" href="../img/icons.svg#next"></use>
+      </svg>
+    </button>
+  </div>
   <ul class="main-restaurant-button-list">
     <li class="main-restaurant-button-item">
-      <button class="main-restaurant-button button" type="submit">
+      <button
+        class="main-restaurant-button button js-open-modal"
+        data-modal="2"
+        type="submit"
+      >
         book a table
       </button>
     </li>
@@ -656,7 +689,7 @@
           <svg class="footer-icon">
             <use
               class="footer-icon-content"
-              href="/mimino-project/assets/icons-e93226c3.svg#instagram"
+              href="/mimino-project/assets/icons-a72497a1.svg#instagram"
             ></use>
           </svg>
         </a>
@@ -666,7 +699,7 @@
           <svg class="footer-icon">
             <use
               class="footer-icon-content"
-              href="/mimino-project/assets/icons-e93226c3.svg#facebook"
+              href="/mimino-project/assets/icons-a72497a1.svg#facebook"
             ></use>
           </svg>
         </a>
@@ -674,7 +707,7 @@
       <li class="footer-item">
         <a href="https://www.twitter.com/">
           <svg class="footer-icon">
-            <use class="footer-icon-content" href="/mimino-project/assets/icons-e93226c3.svg#twitter"></use>
+            <use class="footer-icon-content" href="/mimino-project/assets/icons-a72497a1.svg#twitter"></use>
           </svg>
         </a>
       </li>
@@ -685,37 +718,50 @@
     <div class="modal" data-modal="1">
   <button class="modal-order-box-btn js-modal-close">
     <svg width="32" height="32">
-      <use href="/mimino-project/assets/icons-e93226c3.svg#close"></use>
+      <use href="/mimino-project/assets/icons-a72497a1.svg#close"></use>
     </svg>
   </button>
 
-  <h2 class="modal-title">BOOK <span>A room</span> </h2>
+  <h2 class="modal-title">BOOK <span>A room</span></h2>
 
-  <form action="" class="form" name="form" id="form">
-
+  <form action="#" class="form" name="form" id="form">
     <div class="form-field">
-      <input class="form-input" type="text" name="name" id="name" placeholder=" " required>
+      <input
+        class="form-input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder=" "
+        required
+      />
       <label class="form-label" for="name">Your Name</label>
       <p class="form-text">Who should book a table for?</p>
     </div>
 
     <div class="form-field">
-      <input class="form-input" type="tel" name="name" id="tel" placeholder=" " required>
+      <input
+        class="form-input"
+        type="tel"
+        name="name"
+        id="tel"
+        placeholder=" "
+        required
+      />
       <label class="form-label" for="tel">+ 38 ()</label>
       <p class="form-text">Phone number</p>
     </div>
 
     <div class="form-field">
-      <input type="date" id="myDateInput" placeholder="Today" required>
+      <input type="date" id="myDateInput" placeholder="Today" required />
       <p class="form-text">Check-in date</p>
     </div>
 
     <div class="form-field">
-      <input type="date" required>
+      <input type="date" required />
       <p class="form-text">Check-out date</p>
     </div>
 
-    <div class="form-field ">
+    <div class="form-field">
       <div class="form-input-wrapper">
         <select name="suite">
           <option value="dn" selected="selected">DOUBLE SUITE</option>
@@ -725,36 +771,43 @@
         <p class="form-text">Number category</p>
       </div>
     </div>
-
   </form>
 
   <div class="form-button-block">
-    <button class="form-button button-style" type="submit" form="form">MAKE A RESERVATION</button>
+    <button class="form-button button-style" type="submit" form="form">
+      MAKE A RESERVATION
+    </button>
   </div>
-
 </div>
-
 
 <div class="modal" data-modal="2">
   <button class="modal-order-box-btn js-modal-close">
     <svg width="32" height="32">
-      <use href="/mimino-project/assets/icons-e93226c3.svg#close"></use>
+      <use href="/mimino-project/assets/icons-a72497a1.svg#close"></use>
     </svg>
   </button>
 
   <h2 class="modal-title">BOOK <span>A TABLE</span></h2>
 
-  <form action="" class="form2" name="form2" id="form2">
-
+  <form action="#" class="form2" name="form2" id="form2">
     <div class="form-field">
-      <input class="form-input" type="text" name="name" id="name" placeholder=" " required>
+      <input
+        class="form-input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder=" "
+        required
+      />
       <label class="form-label" for="name">Your Name</label>
       <p class="form-text">Who should book a table for?</p>
     </div>
 
     <div class="form-field">
       <select name="people">
-        <option value="none" disabled="disabled" selected="selected">number of people</option>
+        <option value="none" disabled="disabled" selected="selected">
+          number of people
+        </option>
         <option value="1-5">1-5</option>
         <option value="5-10">5-10</option>
         <option value="10-15">10-15</option>
@@ -763,42 +816,42 @@
     </div>
 
     <div class="form-field form-field-order">
-
-      <input type="date" required>
+      <input type="date" required />
       <p class="form-text">What date to book?</p>
-
     </div>
 
-
     <div class="form-field">
-      <input class="form-input" type="tel" name="name" id="tel" placeholder=" " required>
+      <input
+        class="form-input"
+        type="tel"
+        name="name"
+        id="tel"
+        placeholder=" "
+        required
+      />
       <label class="form-label" for="tel">+ 38 ()</label>
       <p class="form-text">Phone number</p>
     </div>
-
   </form>
 
   <div class="form-button-block">
-    <button class="form-button button-style" type="submit" form="form2">MAKE A RESERVATION</button>
+    <button class="form-button button-style" type="submit" form="form2">
+      MAKE A RESERVATION
+    </button>
   </div>
-
-
 </div>
-
-
 
 <div class="modal" data-modal="3">
   <button class="modal-order-box-btn js-modal-close">
     <svg width="32" height="32">
-      <use href="/mimino-project/assets/icons-e93226c3.svg#close"></use>
+      <use href="/mimino-project/assets/icons-a72497a1.svg#close"></use>
     </svg>
   </button>
 
   <h2 class="modal-title">prices per room</h2>
   <p class="modal-text">Double suite</p>
 
-  <form action="" class="form3" name="form3" id="form3">
-
+  <form action="#" class="form3" name="form3" id="form3">
     <div class="form-field">
       <div class="form-input-wrapper">
         <select name="NnightD">
@@ -814,33 +867,37 @@
     </div>
 
     <div class="form-field">
-      <input class="form-input" disabled="disabled" type="text" name="priceD" id="priceD" placeholder=" ">
+      <input
+        class="form-input"
+        disabled="disabled"
+        type="text"
+        name="priceD"
+        id="priceD"
+        placeholder=" "
+      />
       <label class="form-label" for="priceD">1000</label>
       <p class="form-text">UAH</p>
     </div>
-
   </form>
 
   <div class="form-button-block">
-    <button class="form-button button-style" type="submit" form="form3">MAKE A RESERVATION</button>
+    <button class="form-button button-style" type="submit" form="form3">
+      MAKE A RESERVATION
+    </button>
   </div>
 </div>
-
-
-
 
 <div class="modal" data-modal="4">
   <button class="modal-order-box-btn js-modal-close">
     <svg width="32" height="32">
-      <use href="/mimino-project/assets/icons-e93226c3.svg#close"></use>
+      <use href="/mimino-project/assets/icons-a72497a1.svg#close"></use>
     </svg>
   </button>
 
   <h2 class="modal-title">prices per room</h2>
   <p class="modal-text">Triple Room</p>
 
-  <form action="" class="form4" name="form4" id="form4">
-
+  <form action="#" class="form4" name="form4" id="form4">
     <div class="form-field">
       <div class="form-input-wrapper">
         <select name="NnightT">
@@ -856,34 +913,37 @@
     </div>
 
     <div class="form-field">
-      <input class="form-input" disabled="disabled" type="text" name="priceT" id="priceT" placeholder=" ">
+      <input
+        class="form-input"
+        disabled="disabled"
+        type="text"
+        name="priceT"
+        id="priceT"
+        placeholder=" "
+      />
       <label class="form-label" for="priceT">1500</label>
       <p class="form-text">UAH</p>
     </div>
-
   </form>
 
   <div class="form-button-block">
-    <button class="form-button button-style" type="submit" form="form4">MAKE A RESERVATION</button>
+    <button class="form-button button-style" type="submit" form="form4">
+      MAKE A RESERVATION
+    </button>
   </div>
 </div>
-
-
-
-
 
 <div class="modal" data-modal="5">
   <button class="modal-order-box-btn js-modal-close">
     <svg width="32" height="32">
-      <use href="/mimino-project/assets/icons-e93226c3.svg#close"></use>
+      <use href="/mimino-project/assets/icons-a72497a1.svg#close"></use>
     </svg>
   </button>
 
   <h2 class="modal-title">prices per room</h2>
   <p class="modal-text">four-seater room</p>
 
-  <form action="" class="form5" name="form5" id="form5">
-
+  <form action="#" class="form5" name="form5" id="form5">
     <div class="form-field">
       <div class="form-input-wrapper">
         <select name="NnightF">
@@ -899,15 +959,23 @@
     </div>
 
     <div class="form-field">
-      <input class="form-input" disabled="disabled" type="text" name="priceF" id="priceF" placeholder=" ">
+      <input
+        class="form-input"
+        disabled="disabled"
+        type="text"
+        name="priceF"
+        id="priceF"
+        placeholder=" "
+      />
       <label class="form-label" for="priceF">2000</label>
       <p class="form-text">UAH</p>
     </div>
-
   </form>
 
   <div class="form-button-block">
-    <button class="form-button button-style" type="submit" form="form5">MAKE A RESERVATION</button>
+    <button class="form-button button-style" type="submit" form="form5">
+      MAKE A RESERVATION
+    </button>
   </div>
 </div>
 <div class="overlay js-overlay-modal"></div>
@@ -927,9 +995,9 @@
   const priceInputF = document.querySelector('input[name="priceF"]');
   const priceLabelF = document.querySelector('label[for="priceF"]');
 
-  selectD.addEventListener('change', (event) => {
+  selectD.addEventListener('change', event => {
     const selectedValue = event.target.value;
-    const selectedPrice = Number(selectedValue)
+    const selectedPrice = Number(selectedValue);
 
     if (selectedPrice) {
       priceInputD.value = selectedPrice * 1000;
@@ -937,9 +1005,9 @@
     }
   });
 
-  selectT.addEventListener('change', (event) => {
+  selectT.addEventListener('change', event => {
     const selectedValue = event.target.value;
-    const selectedPrice = Number(selectedValue)
+    const selectedPrice = Number(selectedValue);
 
     if (selectedPrice) {
       priceInputT.value = selectedPrice * 1500;
@@ -947,9 +1015,9 @@
     }
   });
 
-  selectF.addEventListener('change', (event) => {
+  selectF.addEventListener('change', event => {
     const selectedValue = event.target.value;
-    const selectedPrice = Number(selectedValue)
+    const selectedPrice = Number(selectedValue);
 
     if (selectedPrice) {
       priceInputF.value = selectedPrice * 2000;
@@ -958,8 +1026,16 @@
   });
 </script>
 
-    <!-- Loads the specified .html file -->
 
+    <!-- Loads the specified .html file -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     
   </body>
 </html>
