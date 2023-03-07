@@ -53,12 +53,12 @@
 
 
 .modal-title{
-  font-family: 'Sans Medium';
+  font-family: var(--medium);
   margin-bottom: 40px;
   text-transform: uppercase;
 }
 .modal-title span{
-  font-family: 'Sans Medium Italic';
+  font-family: var(--medium-italic);
 }
 
 .modal-text{
@@ -81,8 +81,8 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  transition: background-color var(--transition-duration) var(--const-transition),
-  border var(--transition-duration) var(--const-transition);
+  transition: background-color var(--transition),
+  border var(--transition);
   cursor: pointer;
   stroke: white;  
 }
