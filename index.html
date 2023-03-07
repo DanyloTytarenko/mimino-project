@@ -9,10 +9,13 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     
-    <script type="module" crossorigin src="/mimino-project/assets/mobile-menu-6467d972.js"></script>
-    <link rel="stylesheet" href="/mimino-project/assets/mobile-menu-9c1dac49.css">
+    <script type="module" crossorigin src="/mimino-project/assets/slider-2037bf4d.js"></script>
+    <link rel="stylesheet" href="/mimino-project/assets/slider-b93d771a.css">
   </head>
   <body>
     <header class="header">
@@ -245,120 +248,213 @@
                 give rating <span class="review-rating">4.5</span>
               </p>
             </div>
+            <p class="overlay">
+              Good hotel and restaurant. Located next to the main street.
+              Comfortable and clean rooms, cleaning is done in the rooms, the
+              bathroom is clean and spacious. There is a safe in the room. The
+              bed is large and comfortable. Very good hearty breakfasts, and
+              very tasty. The staff is polite. I recommend
+            </p>
           </div>
-        </div>
-        <picture>
-          <source
-            srcset="/mimino-project/assets/imagedesk2@2x-64b430d5.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="/mimino-project/assets/tabl2@2x-6ea43be7.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="/mimino-project/assets/image2@2x-23a92564.jpg 2x"
-            media="(min-width: 320px)"
-          />
           <img
-            class="img-2"
-            src="/mimino-project/assets/image2-75c1d3d8.jpg"
-            alt="bathroom"
-            width="282"
-          />
-        </picture>
-      </div>
-      <div class="restaurant-hotel-container">
-        <h3 class="restaraunt section-subtitle">RESTAURANT-HOTEL COMPLEX</h3>
-        <p class="section-text container-text">
-          INDULGE IN A TASTE OF LUXURY WITH EVERY BITE AT HOTEL MIMINO. FROM THE
-          FRESHEST SEAFOOD TO THE MOST SUCCULENT STEAKS, EVERY DISH IS CRAFTED
-          WITH CARE TO ENSURE THAT YOU ENJOY A TRULY MEMORABLE DINING
-          EXPERIENCE.
-        </p>
-        <p class="section-text container-text">
-          TREAT YOURSELF TO A TASTE OF THE GOOD LIFE AND COME DINE WITH US
-          TODAY!
-        </p>
-      </div>
-    </div>
-    <div class="restaraunt-business-wrapper">
-      <div class="restaraunt-hotel">
-        <picture>
-          <source
-            srcset="/mimino-project/assets/imagedesk@2x-c1385d18.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="/mimino-project/assets/imagedesk@2x-c1385d18.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="/mimino-project/assets/image3@2x-e8951a6f.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            class="restaurant-hotel-img"
-            src="/mimino-project/assets/image3-f5547cb0.jpg"
-            alt="wine glasses on the table"
+            class="img-1"
+            src="/mimino-project/assets/img1-d3c49460.jpg"
+            alt="lobby-hotel"
             width="335"
           />
-        </picture>
-        <div class="review-container review-alexander">
-          <div class="alexander-container">
-            <img
-              src="../img/review-img/boy.jpg"
-              alt="boy"
-              width="41"
-              class="review-img"
-              style="height: 41px; border-radius: 30px"
-            />
-            <div class="alexander">
-              <p class="review-text">Alexander</p>
-              <p class="review-rating-text">
-                give rating <span class="review-rating">5.5</span>
-              </p>
+
+          <div class="review-container review-maria">
+            <img class="review-img" />
+            <div class="maria-container">
+              <img
+                src="../img/review-img/girl.jpg"
+                alt="girl"
+                width="41"
+                style="border-radius: 30px; height: 41px"
+              />
+              <div class="maria">
+                <p class="review-text">Maria</p>
+                <p class="review-rating-text">
+                  give rating <span class="review-rating">4.5</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="restaraunt-business-wrapper">
+            <div class="restaraunt-hotel">
+              <picture>
+                <source
+                  srcset="/mimino-project/assets/imagedesk@2x-c1385d18.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/mimino-project/assets/imagedesk@2x-c1385d18.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/mimino-project/assets/image3@2x-e8951a6f.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="restaurant-hotel-img"
+                  src="/mimino-project/assets/image3-f5547cb0.jpg"
+                  alt="wine glasses on the table"
+                  width="335"
+                />
+              </picture>
+              <div class="review-container review-alexander">
+                <div class="alexander-container">
+                  <img
+                    src="../img/review-img/boy.jpg"
+                    alt="boy"
+                    width="41"
+                    class="review-img"
+                    style="height: 41px; border-radius: 30px"
+                  />
+
+                  <div class="alexander">
+                    <p class="review-text">Alexander</p>
+                    <p class="review-rating-text">
+                      give rating <span class="review-rating">5.5</span>
+                    </p>
+                  </div>
+                  <p class="overlay-alexander">
+                    Super restaurant. Very tasty cuisine. The waiters are
+                    professionals, the service is at the highest level (not
+                    every "restaurant" in the city has such a service). Always
+                    fresh, well presented. The prices are acceptable.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container business-class-hotel-container">
+              <div class="business-container">
+                <h3 class="business section-subtitle">BUSINESS CLASS HOTEL</h3>
+                <p class="section-text business-class-container-text">
+                  THE MIMINO HOTEL FEATURES SPACIOUS AND STYLISH DOUBLE LUXURY
+                  ROOMS WITH MODERN AMENITIES FOR A COMFORTABLE STAY.
+                  <picture>
+                    <source
+                      srcset="/mimino-project/assets/imagedesk2@2x-64b430d5.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="/mimino-project/assets/tabl2@2x-6ea43be7.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="/mimino-project/assets/image2@2x-23a92564.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img-2"
+                      src="/mimino-project/assets/image2-75c1d3d8.jpg"
+                      alt="bathroom"
+                      width="282"
+                    />
+                  </picture>
+                </p>
+              </div>
+
+              <div class="restaurant-hotel-container">
+                <h3 class="restaraunt section-subtitle">
+                  RESTAURANT-HOTEL COMPLEX
+                </h3>
+                <p class="section-text container-text">
+                  INDULGE IN A TASTE OF LUXURY WITH EVERY BITE AT HOTEL MIMINO.
+                  FROM THE FRESHEST SEAFOOD TO THE MOST SUCCULENT STEAKS, EVERY
+                  DISH IS CRAFTED WITH CARE TO ENSURE THAT YOU ENJOY A TRULY
+                  MEMORABLE DINING EXPERIENCE.
+                </p>
+                <p class="section-text container-text">
+                  TREAT YOURSELF TO A TASTE OF THE GOOD LIFE AND COME DINE WITH
+                  US TODAY!
+                </p>
+              </div>
+            </div>
+            <div class="restaraunt-business-wrapper">
+              <div class="restaraunt-hotel">
+                <picture>
+                  <source
+                    srcset="/mimino-project/assets/imagedesk@2x-c1385d18.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="/mimino-project/assets/imagedesk@2x-c1385d18.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/mimino-project/assets/image3@2x-e8951a6f.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="restaurant-hotel-img"
+                    src="/mimino-project/assets/image3-f5547cb0.jpg"
+                    alt="wine glasses on the table"
+                    width="335"
+                  />
+                </picture>
+                <div class="review-container review-alexander">
+                  <div class="alexander-container">
+                    <img
+                      src="../img/review-img/boy.jpg"
+                      alt="boy"
+                      width="41"
+                      class="review-img"
+                      style="height: 41px; border-radius: 30px"
+                    />
+                    <div class="alexander">
+                      <p class="review-text">Alexander</p>
+                      <p class="review-rating-text">
+                        give rating <span class="review-rating">5.5</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="business-class-hotel-container">
+                <div class="business-container">
+                  <h3 class="business section-subtitle">
+                    BUSINESS CLASS HOTEL
+                  </h3>
+                  <p class="section-text business-class-container-text">
+                    THE MIMINO HOTEL FEATURES SPACIOUS AND STYLISH DOUBLE LUXURY
+                    ROOMS WITH MODERN AMENITIES FOR A COMFORTABLE STAY.
+                  </p>
+                </div>
+
+                <picture>
+                  <source
+                    srcset="./img/desktop@2x/unsplash_rfdp7_80v5a@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet-complex@2x/unsplash_rfdp7_80v5a@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/mimino-project/assets/image4@2x-6c51797e.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="business-img"
+                    src="/mimino-project/assets/image4-d8f67cfc.jpg"
+                    alt="hotel business area"
+                    width="335"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="business-class-hotel-container">
-        <div class="business-container">
-          <h3 class="business section-subtitle">BUSINESS CLASS HOTEL</h3>
-          <p class="section-text business-class-container-text">
-            THE MIMINO HOTEL FEATURES SPACIOUS AND STYLISH DOUBLE LUXURY ROOMS
-            WITH MODERN AMENITIES FOR A COMFORTABLE STAY.
-          </p>
-        </div>
-
-        <picture>
-          <source
-            srcset="./img/desktop@2x/unsplash_rfdp7_80v5a@2x.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./img/tablet-complex@2x/unsplash_rfdp7_80v5a@2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="/mimino-project/assets/image4@2x-6c51797e.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            class="business-img"
-            src="/mimino-project/assets/image4-d8f67cfc.jpg"
-            alt="hotel business area"
-            width="335"
-          />
-        </picture>
-      </div>
     </div>
   </div>
 </section>
-<!--/** |==========================================
-      | section About a complex (Orlovska Maryann)
-      |=========================================== */ -->
 
       <section class="main-restaurant container">
   <div class="main-restaurant-title-text">
@@ -367,202 +463,195 @@
       Relax and unwind with our delicious offerings, available any time of day.
     </p>
   </div>
+  <div class="swiper swiper-restaurant">
+    <ul class="main-restaurant-list swiper-wrapper">
+      <li class="main-restaurant-item mob-slider swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="/mimino-project/assets/img-1_157m-a137d90b.jpg 157w, /mimino-project/assets/img-1_314m-d1e7d556.jpg 314w, /mimino-project/assets/img-1_336t-0f2d3bad.jpg 336w, /mimino-project/assets/img-1_672t-331812b8.jpg 672w"
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/img-1_157m-a137d90b.jpg"
+          alt="coctail"
+          width="336"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item mob-slider swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="/mimino-project/assets/img-2_157m-b48d7b99.jpg 157w, /mimino-project/assets/img-2_314m-7552ea5f.jpg 314w, /mimino-project/assets/img-2_336t-163b838b.jpg 336w, /mimino-project/assets/img-2_672t-98a62034.jpg 672w"
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/img-2_157m-b48d7b99.jpg"
+          alt="chef"
+          width="336"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop desk-slider swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="/mimino-project/assets/coctail_266d-99bd9504.jpg 266w, /mimino-project/assets/coctail_532d-4254efdd.jpg 532w"
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/coctail_266d-99bd9504.jpg"
+          alt="coctail"
+          width="266"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop desk-slider swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="/mimino-project/assets/croissant_266d-f9a45c5a.jpg 266w, /mimino-project/assets/croissant_532d-462f0e12.jpg 532w"
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/croissant_266d-f9a45c5a.jpg"
+          alt="croissant"
+          width="266"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop desk-slider swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="/mimino-project/assets/wine_266d-28568bc7.jpg 266w, /mimino-project/assets/wine_532d-1b89a0b9.jpg 532w"
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/wine_266d-28568bc7.jpg"
+          alt="wine"
+          width="266"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop desk-slider swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="/mimino-project/assets/chef_266d-dd195cc4.jpg 266w, /mimino-project/assets/chef_532d-6cb451c1.jpg 532w"
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/chef_266d-dd195cc4.jpg"
+          alt="chef"
+          width="266"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop desk-slider swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="/mimino-project/assets/fish_266d-a6844781.jpg 266w, /mimino-project/assets/fish_532d-b5fb8cc0.jpg 532w"
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/fish_266d-a6844781.jpg"
+          alt="fish"
+          width="266"
+          height="309"
+          loading="lazy"
+        />
+      </li>
 
-  <ul class="main-restaurant-list">
-    <li class="main-restaurant-item mob-slider">
-      <img
-        class="restaurant-photo"
-        srcset="/mimino-project/assets/img-1_157m-a137d90b.jpg 157w, /mimino-project/assets/img-1_314m-d1e7d556.jpg 314w, /mimino-project/assets/img-1_336t-0f2d3bad.jpg 336w, /mimino-project/assets/img-1_672t-331812b8.jpg 672w"
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/img-1_157m-a137d90b.jpg"
-        alt="coctail"
-        width="336"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item mob-slider">
-      <img
-        class="restaurant-photo"
-        srcset="/mimino-project/assets/img-2_157m-b48d7b99.jpg 157w, /mimino-project/assets/img-2_314m-7552ea5f.jpg 314w, /mimino-project/assets/img-2_336t-163b838b.jpg 336w, /mimino-project/assets/img-2_672t-98a62034.jpg 672w"
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/img-2_157m-b48d7b99.jpg"
-        alt="chef"
-        width="336"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop desk-slider">
-      <img
-        class="restaurant-photo"
-        srcset="/mimino-project/assets/coctail_266d-99bd9504.jpg 266w, /mimino-project/assets/coctail_532d-4254efdd.jpg 532w"
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/coctail_266d-99bd9504.jpg"
-        alt="coctail"
-        width="266"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop desk-slider">
-      <img
-        class="restaurant-photo"
-        srcset="/mimino-project/assets/croissant_266d-f9a45c5a.jpg 266w, /mimino-project/assets/croissant_532d-462f0e12.jpg 532w"
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/croissant_266d-f9a45c5a.jpg"
-        alt="croissant"
-        width="266"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop desk-slider">
-      <img
-        class="restaurant-photo"
-        srcset="/mimino-project/assets/wine_266d-28568bc7.jpg 266w, /mimino-project/assets/wine_532d-1b89a0b9.jpg 532w"
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/wine_266d-28568bc7.jpg"
-        alt="wine"
-        width="266"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop desk-slider">
-      <img
-        class="restaurant-photo"
-        srcset="/mimino-project/assets/chef_266d-dd195cc4.jpg 266w, /mimino-project/assets/chef_532d-6cb451c1.jpg 532w"
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/chef_266d-dd195cc4.jpg"
-        alt="chef"
-        width="266"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop desk-slider">
-      <img
-        class="restaurant-photo"
-        srcset="/mimino-project/assets/fish_266d-a6844781.jpg 266w, /mimino-project/assets/fish_532d-b5fb8cc0.jpg 532w"
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/fish_266d-a6844781.jpg"
-        alt="fish"
-        width="266"
-        height="309"
-        loading="lazy"
-      />
-    </li>
+      <!-- Slider pictures -->
 
-    <!-- Slider pictures -->
-
-    <li class="main-restaurant-item-desktop">
-      <img
-        class="restaurant-photo"
-        srcset="
-          img/Main/main-restaurant/img-3_157m.jpg 157w,
-          img/Main/main-restaurant/img-3_314m.jpg 314w,
-          img/Main/main-restaurant/img-3_336t.jpg 336w,
-          img/Main/main-restaurant/img-3_672t.jpg 672w,
-          img/Main/main-restaurant/img-3_266d.jpg 266w,
-          img/Main/main-restaurant/img-3_532d.jpg 532w
-        "
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/img-3_157m-c82e8498.jpg"
-        alt="pasta"
-        width="336"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop">
-      <img
-        class="restaurant-photo"
-        srcset="
-          img/Main/main-restaurant/img-4_157m.jpg 157w,
-          img/Main/main-restaurant/img-4_314m.jpg 314w,
-          img/Main/main-restaurant/img-4_336t.jpg 336w,
-          img/Main/main-restaurant/img-4_672t.jpg 672w,
-          img/Main/main-restaurant/img-4_266d.jpg 266w,
-          img/Main/main-restaurant/img-4_532d.jpg 532w
-        "
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/img-4_157m-0a6a1e1f.jpg"
-        alt="girl-eats"
-        width="336"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop">
-      <img
-        class="restaurant-photo"
-        srcset="
-          img/Main/main-restaurant/img-5_157m.jpg 157w,
-          img/Main/main-restaurant/img-5_314m.jpg 314w,
-          img/Main/main-restaurant/img-5_336t.jpg 336w,
-          img/Main/main-restaurant/img-5_672t.jpg 672w,
-          img/Main/main-restaurant/img-5_266d.jpg 266w,
-          img/Main/main-restaurant/img-5_532d.jpg 532w
-        "
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/img-5_157m-77ad9970.jpg"
-        alt="shrimp"
-        width="336"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop">
-      <img
-        class="restaurant-photo"
-        srcset="
-          img/Main/main-restaurant/img-6_157m.jpg 157w,
-          img/Main/main-restaurant/img-6_314m.jpg 314w,
-          img/Main/main-restaurant/img-6_336t.jpg 336w,
-          img/Main/main-restaurant/img-6_672t.jpg 672w,
-          img/Main/main-restaurant/img-6_266d.jpg 266w,
-          img/Main/main-restaurant/img-6_532d.jpg 532w
-        "
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/img-6_157m-c0d83ee7.jpg"
-        alt="drink"
-        width="336"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-    <li class="main-restaurant-item-desktop">
-      <img
-        class="restaurant-photo"
-        srcset="
-          img/Main/main-restaurant/img-7_157m.jpg 157w,
-          img/Main/main-restaurant/img-7_314m.jpg 314w,
-          img/Main/main-restaurant/img-7_336t.jpg 336w,
-          img/Main/main-restaurant/img-7_672t.jpg 672w,
-          img/Main/main-restaurant/img-7_266d.jpg 266w,
-          img/Main/main-restaurant/img-7_532d.jpg 532w
-        "
-        sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-        src="/mimino-project/assets/img-7_157m-b8593821.jpg"
-        alt="asparagus"
-        width="336"
-        height="309"
-        loading="lazy"
-      />
-    </li>
-  </ul>
-  <div class="btn-wrap">
-    <button class="prev-btn">
-      <svg class="prev-btn-icon">
-        <use class="prev-btn-icon-content" href="/mimino-project/assets/icons-a72497a1.svg#prev"></use>
-      </svg>
-    </button>
-    <button class="next-btn">
-      <svg class="next-btn-icon">
-        <use class="next-btn-icon-content" href="/mimino-project/assets/icons-a72497a1.svg#next"></use>
-      </svg>
-    </button>
+      <li class="main-restaurant-item-desktop swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="
+            img/Main/main-restaurant/img-3_157m.jpg 157w,
+            img/Main/main-restaurant/img-3_314m.jpg 314w,
+            img/Main/main-restaurant/img-3_336t.jpg 336w,
+            img/Main/main-restaurant/img-3_672t.jpg 672w,
+            img/Main/main-restaurant/img-3_266d.jpg 266w,
+            img/Main/main-restaurant/img-3_532d.jpg 532w
+          "
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/img-3_157m-c82e8498.jpg"
+          alt="pasta"
+          width="336"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="
+            img/Main/main-restaurant/img-4_157m.jpg 157w,
+            img/Main/main-restaurant/img-4_314m.jpg 314w,
+            img/Main/main-restaurant/img-4_336t.jpg 336w,
+            img/Main/main-restaurant/img-4_672t.jpg 672w,
+            img/Main/main-restaurant/img-4_266d.jpg 266w,
+            img/Main/main-restaurant/img-4_532d.jpg 532w
+          "
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/img-4_157m-0a6a1e1f.jpg"
+          alt="girl-eats"
+          width="336"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="
+            img/Main/main-restaurant/img-5_157m.jpg 157w,
+            img/Main/main-restaurant/img-5_314m.jpg 314w,
+            img/Main/main-restaurant/img-5_336t.jpg 336w,
+            img/Main/main-restaurant/img-5_672t.jpg 672w,
+            img/Main/main-restaurant/img-5_266d.jpg 266w,
+            img/Main/main-restaurant/img-5_532d.jpg 532w
+          "
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/img-5_157m-77ad9970.jpg"
+          alt="shrimp"
+          width="336"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="
+            img/Main/main-restaurant/img-6_157m.jpg 157w,
+            img/Main/main-restaurant/img-6_314m.jpg 314w,
+            img/Main/main-restaurant/img-6_336t.jpg 336w,
+            img/Main/main-restaurant/img-6_672t.jpg 672w,
+            img/Main/main-restaurant/img-6_266d.jpg 266w,
+            img/Main/main-restaurant/img-6_532d.jpg 532w
+          "
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/img-6_157m-c0d83ee7.jpg"
+          alt="drink"
+          width="336"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+      <li class="main-restaurant-item-desktop swiper-slide">
+        <img
+          class="restaurant-photo"
+          srcset="
+            img/Main/main-restaurant/img-7_157m.jpg 157w,
+            img/Main/main-restaurant/img-7_314m.jpg 314w,
+            img/Main/main-restaurant/img-7_336t.jpg 336w,
+            img/Main/main-restaurant/img-7_672t.jpg 672w,
+            img/Main/main-restaurant/img-7_266d.jpg 266w,
+            img/Main/main-restaurant/img-7_532d.jpg 532w
+          "
+          sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+          src="/mimino-project/assets/img-7_157m-b8593821.jpg"
+          alt="asparagus"
+          width="336"
+          height="309"
+          loading="lazy"
+        />
+      </li>
+    </ul>
+    <div class="swiper-btn">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </div>
   <ul class="main-restaurant-button-list">
     <li class="main-restaurant-button-item">
