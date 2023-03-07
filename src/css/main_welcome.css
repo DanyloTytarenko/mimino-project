@@ -1,0 +1,87 @@
+.pading-welcome {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  .pading-welcome {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pading-welcome {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+}
+.titel-welcome {
+  font-family: var(--medium);
+  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .titel-welcome {
+    font-size: 36px;
+    line-height: 1.11;
+    max-width: 436px;
+    margin-bottom: 50px;
+  }
+}
+.titel-welcome span {
+  font-family: var(--medium-italic);
+}
+.text-welcome {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.flex-text-welcome {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.text-our-room {
+  max-width: 306px;
+}
+.text-each-room {
+  max-width: 335px;
+}
+.welcome-img {
+  max-width: 335px;
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .flex-text-welcome {
+    flex-wrap: nowrap;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .text-each-room {
+    max-width: 366px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .absolute-desk {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 100px;
+    left: 714px;
+    height: 599px;
+    align-content: space-between;
+  }
+  .text-our-room,
+  .text-each-room {
+    max-width: 437px;
+  }
+  .flex-text-welcome {
+    margin-bottom: 0;
+  }
+}
