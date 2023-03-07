@@ -15,28 +15,30 @@
   }
 }
 
-.container-kitchen {
-  display: flex;
-  flex-direction: column;
-
+.container {
+  max-width: 375px;
   outline: 2px solid red;
   outline-offset: -2px;
 }
 
 @media screen and (min-width: 768px) {
-  .container-kitchen {
+  .container {
     max-width: 768px;
-    padding-right: 32px;
     padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container-kitchen {
-    flex-wrap: wrap;
-    gap: 32px;
+@media screen and (min-width: 1440px) {
+  .container {
     max-width: 1440px;
   }
+}
+
+.container-about-kitchen {
+  position: relative;
+  text-transform: uppercase;
+  color: #121212;
 }
 
 .visually-hidden {
@@ -53,87 +55,131 @@
   clip-path: inset(100%);
 }
 
-.list-kitchen-img {
+.img-kitchen-chief {
+  display: block;
+  max-width: 335px;
+}
+.img-kitchen-meat {
+  display: block;
+  max-width: 158px;
+}
+.img-kitchen-cocktail {
+  display: block;
+  max-width: 157px;
+}
+@media screen and (min-width: 768px) {
+  .img-kitchen-chief {
+    justify-content: center;
+    max-width: 388px;
+  }
+  .img-kitchen-meat {
+    max-width: 284px;
+  }
+  .img-kitchen-cocktail {
+    max-width: 284px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .img-kitchen-chief {
+    max-width: 511px;
+  }
+  .img-kitchen-meat {
+    max-width: 334px;
+  }
+  .img-kitchen-cocktail {
+    max-width: 467px;
+  }
+}
+
+.img-kitchen {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .list-kitchen-img {
+
+@media screen and (min-width: 768px) {
+  .img-kitchen {
     flex-direction: row-reverse;
-    flex-wrap: nowrap;
     margin-bottom: 40px;
+    row-gap: 16px;
     column-gap: 32px;
   }
 }
 
-.item-kitchen {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
+@media screen and (min-width: 1440px) {
+  .img-kitchen {
+    flex-direction: row;
+  }
 }
 
-.img-kitchen {
-  object-fit: cover;
-  object-position: center;
-}
-@media screen and (max-width: 767px) {
-  .img-kitchen-chief {
-    width: 335px;
-    height: 443px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .img-kitchen-chief {
-    width: 388px;
-    height: 515px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .img-kitchen-meat {
-    width: 158px;
-    height: 149px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .img-kitchen-meat {
-    width: 284px;
-    height: 296px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .img-kitchen-cocktail {
-    width: 157px;
-    height: 149px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .img-kitchen-cocktail {
-    width: 284px;
-    height: 203px;
-  }
-}
-.list-kitchen-text {
+.images-kitchen-wrapper {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
+}
 
-  width: 335px;
-  font-family: 'DM Sans';
-  font-style: normal;
+@media screen and (min-width: 768px) {
+  .images-kitchen-wrapper {
+    row-gap: 32px;
+    flex-wrap: wrap;
+    column-gap: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .images-kitchen-wrapper {
+    column-gap: 32px;
+  }
+}
+
+.text-kitchen-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .text-kitchen-wrapper {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .text-kitchen-wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 32px;
+    position: absolute;
+    width: 1376px;
+    height: 598px;
+    left: 18px;
+    top: 0px;
+    justify-content: flex-end;
+  }
+}
+
+.text-kitchen {
+  text-overflow: inherit;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #121212;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .list-kitchen-text {
-    flex-wrap: nowrap;
-    width: 704px;
-    gap: 32px;
+@media screen and (min-width: 768px) {
+  .text-kitchen {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text-kitchen:first-child {
+    width: 334px;
+  }
+
+  .text-kitchen:last-child {
+    width: 467px;
   }
 }
 .italic {
