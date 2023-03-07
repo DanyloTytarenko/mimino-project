@@ -3,7 +3,7 @@
     margin: 0 auto;
  
 }  */
-  /* body{
+/* body{
     margin: 0;
 }   */
 /* .about-complex{
@@ -15,258 +15,251 @@
    
     column-gap: 20px;
 } */
-    
- /* .img {
+
+/* .img {
     display: block;
     height: auto;
   }   */
 
-.img-container{
-    position: relative;
-    row-gap: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+.img-container {
+  position: relative;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
-.img-1{
-    width: 335px;
-    height: 442px;
+.img-1 {
+  margin: 0 auto;
+  width: 335px;
+  height: 442px;
 }
-.img-2{
-    width: 282px;
-    height: 153px;
+.img-2 {
+  width: 282px;
+  height: 153px;
 }
-.section-subtitle{
-    /* font-family: var(--regular);  */
-    font-size: 12px;
-    line-height: 1.16;
-    color: #484848;
-    margin-top: 32px;
-    margin-bottom: 18px;
-   
+.section-subtitle {
+  /* font-family: var(--regular);  */
+  font-size: 12px;
+  line-height: 1.16;
+  color: #484848;
+  margin-top: 32px;
+  margin-bottom: 18px;
 }
-.section-text{
+.section-text {
   font-family: var(--medium);
   font-size: 14px;
   line-height: 1.28;
   color: #121212;
-  
 }
-.container-text{
-    width: 335px;
-  
-   
+.container-text {
+  max-width: 335px;
 }
-.restaurant-hotel-img{
-    position: relative;
-    width: 335px;
-    height: 311px;
-    margin-top: calc(64px - 14px);
+
+.restaurant-hotel-img {
+  position: relative;
+  width: 335px;
+  height: 311px;
+  margin-top: calc(64px - 14px);
 }
-.restaraunt-hotel{
-    position: relative;
+.restaraunt-hotel {
+  position: relative;
 }
-.restaurant-hotel-container{
-   
-    width: 335px;
-    display: flex;
-    gap: 14px;
+.restaurant-hotel-container {
+  max-width: 335px;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.restaraunt.section-subtitle {
+  margin-bottom: calc(18px - 14px);
+  letter-spacing: 1.8px;
+}
+.business.section-subtitle {
+  margin-bottom: calc(18px - 14px);
+  letter-spacing: 1.8px;
+  margin-top: 54px;
+}
+
+.business-class-hotel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: start;
+  max-width: 335px;
+}
+@media screen and (min-width: 768px) {
+  .business-class-hotel-container {
+    max-width: 100%;
+  }
+}
+.business-class-container-text {
+  width: 269px;
+}
+
+.business-img {
+  width: 335px;
+  height: 309px;
+  margin-top: 26px;
+}
+.review-maria {
+  position: absolute;
+  left: calc(100% - 212px);
+  bottom: 123px;
+}
+.review-alexander {
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+}
+.review-container {
+  width: 212px;
+  height: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #121212;
+}
+.maria-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.alexander-container {
+  padding-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  gap: 12px;
+}
+.review-text {
+  font-family: var(--medium);
+  font-size: 14px;
+  /* line-height: 1; */
+  color: #f6f6f6f6;
+}
+.review-rating {
+  font-family: var(--medium);
+  font-size: 12px;
+  /* line-height: 15.96; */
+  color: #f6f6f6f6;
+}
+.review-rating-text {
+  /* font-family: var(--regular); */
+  font-size: 12px;
+  /* line-height: 15.96; */
+  color: #575757;
+}
+.business-container {
+  display: flex;
+  flex-direction: column;
+}
+.alexander,
+.maria {
+  display: flex;
+  justify-content: start;
+  gap: 7px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .container-about {
+    width: 704px;
+    margin: 0 auto;
     flex-direction: column;
-    justify-content: start;
-}
-
-.restaraunt.section-subtitle{
-    margin-bottom: calc(18px - 14px);
-    letter-spacing: 1.8px;
-}
-.business.section-subtitle{
-    margin-bottom: calc(18px - 14px);
-    letter-spacing: 1.8px;
-    margin-top: 54px;
-}
-
-.business-class-hotel-container{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    justify-content: start;
-    width: 335px;
-}
-.business-class-container-text{
-    width: 269px;
-}
-
-.business-img{
-    width: 335px;
-    height: 309px;
-    margin-top: 26px;
-}
-.review-maria{
+  }
+  .img-2 {
     position: absolute;
-    left: 123px;
-    bottom: 123px;
-}
-.review-alexander{
- position: absolute;
- left: 0;
- bottom: -22px;
-}
-.review-container{
-    
-    width: 212px;
-    height: 61px;
+    top: 209px;
+    left: 299px;
+  }
+  .review-maria {
+    z-index: 1;
+    right: 0px;
+    top: 176px;
+    left: 370px;
+  }
+  .about-complex {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .review-alexander {
+    position: absolute;
+    left: 9px;
+    bottom: 128px;
+  }
+  .business-container {
+    row-gap: 18px;
+  }
+  .restaraunt-hotel {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    border-radius: 6px;
-    background-color: #121212;
-}
-.maria-container{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    padding-left: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-}
-.alexander-container{
-    padding-left: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: row;
-    gap: 12px;
-}
-.review-text{
-    font-family: var(--medium);
-    font-size: 14px;
-    /* line-height: 1; */
-    color: #f6f6f6f6;
-}
-.review-rating{
-    font-family: var(--medium);
-    font-size: 12px;
-    /* line-height: 15.96; */
-    color: #f6f6f6f6;
+    justify-content: right;
+  }
 
-}
-.review-rating-text{
-    /* font-family: var(--regular); */
-    font-size: 12px;
-    /* line-height: 15.96; */
-    color: #575757;
-  
-   
-}
-.business-container{
-    display: flex;
-    flex-direction: column;
-}
-.alexander, .maria{
-    display: flex;
-    justify-content: start;
-    gap: 7px;
-    flex-direction: column;
-}
-@media screen and (min-width: 768px){
-     .container{
-        width: 704px;
-        margin: 0 auto;
-        flex-direction: column;
-     
-    } 
-    .img-2{
-        position: absolute;
-        top: 209px;
-        left: 299px;   
-    }
-    .review-maria{
-        z-index: 1;
-        right: 0px;
-        top: 176px;
-        left: 370px;
-    }
-    .about-complex{
-        padding-top: 80px;
-        padding-bottom: 80px; 
-        
-    }
-    .review-alexander{
-        position: absolute;
-        left: 99px;
-        bottom: 128px;
-    }
-    .business-container{
-        row-gap: 18px;
-    }
-    .restaraunt-hotel{
-        display: flex;
-        justify-content: right;
-    }
- 
-    .business.section-subtitle{
-        margin-top: 40px;
-        margin-bottom: 0;
-    }
-    .business-img{
-        margin-top: 40px;
-    }
-    .business-class-hotel-container{
-        flex-direction: row-reverse;
-    }
-.img-1{
-     width: 482px;
-    height: 636px; 
-}
-.img-2{
+  .business.section-subtitle {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .business-img {
+    margin-top: 40px;
+  }
+  .business-class-hotel-container {
+    flex-direction: row-reverse;
+  }
+  .img-1 {
+    width: 482px;
+    height: 636px;
+  }
+  .img-2 {
     width: 404px;
     height: 219px;
-}
-.restaurant-hotel-img{
+  }
+  .restaurant-hotel-img {
     width: 530px;
     height: 492px;
-}
-.business-img{
+  }
+  .business-img {
     width: 266px;
-    
+  }
 }
-}
-@media screen and (min-width: 1440px){
-    .container{
-        width: 1376px;
-        margin: 0 auto; 
-    } 
-    .complex-wrapper{
-        display: flex;
-        gap: 364px;
-        align-items: center;
-        flex-direction: row;
-    }
-    .restaraunt-business-wrapper{
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        gap: 84px;
-    }
+@media screen and (min-width: 1440px) {
+  .container-about {
+    width: 1376px;
+    margin: 0 auto;
+  }
+  .complex-wrapper {
+    display: flex;
+    gap: 364px;
+    align-items: center;
+    flex-direction: row;
+  }
+  .restaraunt-business-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 84px;
+  }
 
-    .container.business-class-hotel-container{
-        width: auto;
-        margin: 0;
-    }
-    .review-alexander{
-        left: -107px;  
-    }
-    img{
-        max-width: none;
-    }    
-    .img-2{
-        width: 439px;
-        height: 219px;
-    }
-    
-} 
+  .container.business-class-hotel-container {
+    width: auto;
+    margin: 0;
+  }
+  .review-alexander {
+    left: -107px;
+  }
+
+  .img-2 {
+    width: 439px;
+    height: 219px;
+  }
+}
