@@ -172,7 +172,7 @@ img {
     .picture-bedroom{
         order: 2;
         position: absolute;
-        right: 60px;
+        right: 0px;
         top: 0;       
     }
     .picture-bathroom{
