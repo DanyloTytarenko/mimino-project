@@ -27,13 +27,13 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .rest-container {
+  .rest-menu-container {
     padding-right: 126px;
     padding-left: 126px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .rest-container {
+  .rest-menu-container {
     padding-right: 168px;
     padding-left: 168px;
   }

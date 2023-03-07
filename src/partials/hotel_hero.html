@@ -5,10 +5,22 @@
         <h1 class="hotel-hero-title">Hotel</h1>
         <ul class="hotel-hero-list">
           <li>
-            <button class="hotel-hero-btn" type="button">book a room</button>
+            <button
+              class="hotel-hero-btn js-open-modal"
+              type="button"
+              data-modal="1"
+            >
+              book a room
+            </button>
           </li>
           <li>
-            <button class="hotel-hero-btn" type="button">view prices</button>
+            <button
+              class="hotel-hero-btn js-open-modal"
+              data-modal="3"
+              type="button"
+            >
+              view prices
+            </button>
           </li>
         </ul>
         <p class="hotel-hero-txt desk">
@@ -17,8 +29,8 @@
           something for everyone.
         </p>
       </div>
-      <div>
-        <ul>
+      <div class="slide-wrapper">
+        <ul class="hero-slider">
           <li>
             <picture>
               <source
@@ -125,6 +137,24 @@
             </picture>
           </li>
         </ul>
+        <div class="btn-wrap-hero">
+          <button class="prev-btn">
+            <svg class="prev-btn-icon">
+              <use
+                class="prev-btn-icon-content"
+                href="img/icons.svg#prev"
+              ></use>
+            </svg>
+          </button>
+          <button class="next-btn">
+            <svg class="next-btn-icon">
+              <use
+                class="next-btn-icon-content"
+                href="img/icons.svg#next"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
     <p class="hotel-hero-txt mob">

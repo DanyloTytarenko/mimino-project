@@ -24,6 +24,7 @@
 @import url('./room_hero.css');
 @import url('./room_amenities.css');
 @import url('./modal.css');
+@import url('./slider.css');
 @import url('./footer.css');
 
 @font-face {
@@ -90,3 +91,4 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+

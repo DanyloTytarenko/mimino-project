@@ -3,14 +3,20 @@
     <div class="room-hero-wrap">
       <div class="room-hero-left">
         <h1 class="room-hero-title">Double luxury room</h1>
-        <button class="room-hero-btn" type="button">view prices</button>
+        <button
+          class="room-hero-btn js-open-modal"
+          data-modal="3"
+          type="button"
+        >
+          view prices
+        </button>
         <p class="room-hero-txt desk">
           The Mimino hotel features spacious and stylish double luxury rooms
           with modern amenities for a comfortable stay.
         </p>
       </div>
-      <div>
-        <ul>
+      <div class="slide-wrapper">
+        <ul class="hero-slider">
           <li>
             <picture>
               <source
@@ -117,6 +123,24 @@
             </picture>
           </li>
         </ul>
+        <div class="btn-wrap-hero">
+          <button class="prev-btn">
+            <svg class="prev-btn-icon">
+              <use
+                class="prev-btn-icon-content"
+                href="img/icons.svg#prev"
+              ></use>
+            </svg>
+          </button>
+          <button class="next-btn">
+            <svg class="next-btn-icon">
+              <use
+                class="next-btn-icon-content"
+                href="img/icons.svg#next"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
     <p class="room-hero-txt mob">
