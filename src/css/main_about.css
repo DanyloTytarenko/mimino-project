@@ -104,6 +104,115 @@
   height: 309px;
   margin-top: 26px;
 }
+ feature/about-complex
+.review-maria{
+    position: absolute;
+    left: 123px;
+    bottom: 123px;
+    overflow: hidden;
+}
+.review-maria:hover,
+.review-maria:focus{
+    transform: scale(1.5);
+    overflow: visible;
+    opacity: 1;
+    transition: ease;
+}
+
+.review-maria:hover .overlay, .review-maria:focus .overlay{
+    transform: translate(0, 33%);
+    opacity: 1;
+}
+
+.maria{
+
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    z-index: -2;
+    top: 0;
+    height: 100%;
+    font-size: 10px;
+    margin: 0;
+    border-radius: 0px;
+    opacity: 0;
+    /* font-weight: 7px; */
+    line-height: 1.5;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 98px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.7);
+    transform: translate(0, -100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+.review-alexander{
+ position: absolute;
+ left: 0;
+ z-index: 1;
+ bottom: -22px;
+ overflow: hidden;
+}
+.review-alexander:hover,
+.review-alexander:focus{
+    transform: scale(1.5);
+    overflow: visible;
+    /* transition: 0.3s ease; */
+}
+.review-alexander:hover .overlay-alexander, .review-alexander:focus .overlay-alexander{
+    transform: translate(0, 40%);
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.alexander{
+
+    position: relative;
+    overflow: hidden;
+   
+}
+.overlay-alexander{
+    position: absolute;
+    left: 0;
+    z-index: -2;
+    top: 0;
+    height: 100%;
+    font-size: 10px;
+    margin: 0;
+    /* opacity: 0; */
+    /* font-weight: 7px; */
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 68px;
+    color: white;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(0, 0, 0, 0.7);
+    transform: translate(0, -100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
+    
+.review-container{
+    
+    width: 212px;
+    height: 61px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #121212;
+=======
 .review-maria {
   position: absolute;
   left: calc(100% - 212px);
@@ -123,6 +232,7 @@
   align-items: center;
   border-radius: 6px;
   background-color: #121212;
+ 
 }
 .maria-container {
   display: flex;
