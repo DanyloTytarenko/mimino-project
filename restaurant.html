@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
 
-    
-    <script type="module" crossorigin src="/mimino-project/assets/mobile-menu-6467d972.js"></script>
-    <link rel="stylesheet" href="/mimino-project/assets/mobile-menu-5e553984.css">
-  </head>
-  <body>
-    <header class="header-light">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+
+  
+  <script type="module" crossorigin src="/mimino-project/assets/mobile-menu-6467d972.js"></script>
+  <link rel="stylesheet" href="/mimino-project/assets/mobile-menu-32dc948a.css">
+</head>
+
+<body>
+  <header class="header-light">
   <div class="container">
     <div class="header-wrapper">
       <nav class="nav">
@@ -153,8 +152,8 @@
 
 <script src="../js/mobile-menu.js" defer></script>
 
-    <main>
-      <section class="rest-hero-section">
+  <main>
+    <section class="rest-hero-section">
   <div class="rest-hero-container container">
     <div class="rest-hero-wrap">
       <div class="rest-hero-left">
@@ -288,8 +287,65 @@
   </div>
 </section>
 
-      
-      <section class="section rest-menu-section">
+    <!-- About a kitchen section -->
+<section class="section section-about-kitchen">
+    <div class="container container-about-kitchen">
+        <h2 class="visually-hidden" hidden>About a kitchen</h2>
+        <div class="img-kitchen">
+            <picture class="img-kitchen-chief">
+                <source type="image/jpg" media="(min-width: 1440px)"
+                    srcset="/mimino-project/assets/img-chief_511-ae4fb517.jpg 1x, /mimino-project/assets/img-chief_1022-bb8d1c7f.jpg 2x">
+                <source type="image/jpg" media="(min-width: 768px)"
+                    srcset="/mimino-project/assets/img-chief_388-25fe9ca3.jpg 1x, /mimino-project/assets/img-chief_776-e2131676.jpg 2x">
+                <source type="image/jpg" media="(min-width: 320px)"
+                    srcset="/mimino-project/assets/img-chief_388-25fe9ca3.jpg 1x, /mimino-project/assets/img-chief_776-e2131676.jpg 2x">
+                <img src="/mimino-project/assets/img-chief_388-25fe9ca3.jpg" alt="image of chief" width="511" height="598"
+                    loading="lazy">
+            </picture>
+            <div class="images-kitchen-wrapper">
+                <picture class="img-kitchen-meat">
+                    <source type="image/jpg" media="(min-width: 1440px)"
+                        srcset="/mimino-project/assets/img-meat_334-1747712c.jpg 1x, /mimino-project/assets/img-meat_668-67b06934.jpg 2x">
+                    <source type="image/jpg" media="(min-width: 768px)"
+                        srcset="/mimino-project/assets/img-meat_284-cb012039.jpg 1x, /mimino-project/assets/img-meat_568-278459fd.jpg 2x">
+                    <source type="image/jpg" media="(min-width: 320px)"
+                        srcset="/mimino-project/assets/img-meat_158-09d685aa.jpg 1x, /mimino-project/assets/img-meat_316-aa82d98a.jpg 2x">
+                    <img src="/mimino-project/assets/img-meat_158-09d685aa.jpg" alt="image of meat" width="334" height="389"
+                        loading="lazy">
+                </picture>
+                <picture class="img-kitchen-cocktail">
+                    <source type="image/jpg" media="(min-width: 1440px)"
+                        srcset="/mimino-project/assets/img-cocktail_467-f1a96273.jpg 1x, /mimino-project/assets/img-cocktail_934-5bba9e23.jpg 2x">
+                    <source type="image/jpg" media="(min-width: 768px)"
+                        srcset="/mimino-project/assets/img-cocktail_284-a0974463.jpg 1x, /mimino-project/assets/img-cocktail_568-91535da5.jpg 2x">
+                    <source type="image/jpg" media="(min-width: 320px)"
+                        srcset="/mimino-project/assets/img-cocktail_284-a0974463.jpg 1x, /mimino-project/assets/img-cocktail_568-91535da5.jpg 2x">
+                    <img src="/mimino-project/assets/img-cocktail_284-a0974463.jpg" alt="image of cocktail" width="467" height="389"
+                        loading="lazy">
+                </picture>
+            </div>
+        </div>
+        <div class="text-kitchen-wrapper">
+            <p class="text-kitchen">
+                At Mimino, we are experts in <span class="italic">meat preparation.</span> Our chefs use only the
+                finest and
+                freshest ingredients
+                <span class="italic">to create
+                    delicious dishes</span> that showcase the flavors of premium cuts of meat.
+            </p>
+            <p class="text-kitchen">Our <span class="italic">slow-cooking process</span> and expert seasoning bring out
+                the best in each
+                dish,
+                making
+                for an
+                unforgettable dining
+                experience. Come taste the magic<span class="italic">of meat preparation at</span> Mimino.
+            </p>
+        </div>
+
+    </div>
+</section>
+    <section class="section rest-menu-section">
   <div class="container rest-menu-container">
     <h2 class="rest-title">RESTAURANT MENU</h2>
     <div class="rest-menu-slide-wrapper">
@@ -608,8 +664,8 @@
   </div>
 </section>
 
-    </main>
-    <footer class="footer container">
+  </main>
+  <footer class="footer container">
   <nav class="footer-navigation">
     <ul class="footer-nav">
       <li class="footer-nav-item">
@@ -660,7 +716,7 @@
   </div>
 </footer>
 
-    <div class="modal" data-modal="1">
+  <div class="modal" data-modal="1">
   <button class="modal-order-box-btn js-modal-close">
     <svg width="32" height="32">
       <use href="/mimino-project/assets/icons-a72497a1.svg#close"></use>
@@ -969,7 +1025,8 @@
   });
 </script>
 
-    
+  
 
-  </body>
+</body>
+
 </html>
