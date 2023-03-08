@@ -162,7 +162,9 @@ option{
   background-color: #F7F7F7;
   color:#121212;
 }
-
+.form-input-valid:invalid{
+  color:rgba(255, 255, 255, .4);
+}
 select{
     text-transform: uppercase;
     
