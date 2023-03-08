@@ -9,27 +9,16 @@
 
   <form action="#" class="form" name="form" id="form">
     <div class="form-field">
-      <input
-        class="form-input"
-        type="text"
-        name="name"
-        id="name"
-        placeholder=" "
-        required
-      />
+      <input class="form-input form-input-valid" type="text" name="name" id="name"
+        pattern="[A-Z]{1}[a-z]{1,30} [A-Z]{1}[a-z]{1,30}" title="Example: John Frost" placeholder=" " required />
       <label class="form-label" for="name">Your Name</label>
       <p class="form-text">Who should book a table for?</p>
     </div>
 
     <div class="form-field">
-      <input
-        class="form-input"
-        type="tel"
-        name="name"
-        id="tel"
-        placeholder=" "
-        required
-      />
+      <input class="form-input form-input-valid" type="tel" name="tel" id="tel"
+        pattern="[+] [3]{1}[8]{1} [(]{1}[0-9]{3}[)]{1} [0-9]{7}" title="Example: + 38 (000) 0000000" placeholder=" "
+        required />
       <label class="form-label" for="tel">+ 38 ()</label>
       <p class="form-text">Phone number</p>
     </div>
@@ -74,14 +63,8 @@
 
   <form action="#" class="form2" name="form2" id="form2">
     <div class="form-field">
-      <input
-        class="form-input"
-        type="text"
-        name="name"
-        id="name"
-        placeholder=" "
-        required
-      />
+      <input class="form-input form-input-valid" type="text" name="name" id="name"
+        pattern="[A-Z]{1}[a-z]{1,30} [A-Z]{1}[a-z]{1,30}" title="Example: John Frost" placeholder=" " required />
       <label class="form-label" for="name">Your Name</label>
       <p class="form-text">Who should book a table for?</p>
     </div>
@@ -104,14 +87,8 @@
     </div>
 
     <div class="form-field">
-      <input
-        class="form-input"
-        type="tel"
-        name="name"
-        id="tel"
-        placeholder=" "
-        required
-      />
+      <input class="form-input" type="tel" name="tel" id="tel" pattern="[+] [3]{1}[8]{1} [(]{1}[0-9]{3}[)]{1} [0-9]{7}"
+        title="Example: + 38 (000) 0000000" placeholder=" " required />
       <label class="form-label" for="tel">+ 38 ()</label>
       <p class="form-text">Phone number</p>
     </div>
@@ -150,14 +127,7 @@
     </div>
 
     <div class="form-field">
-      <input
-        class="form-input"
-        disabled="disabled"
-        type="text"
-        name="priceD"
-        id="priceD"
-        placeholder=" "
-      />
+      <input class="form-input" disabled="disabled" type="text" name="priceD" id="priceD" placeholder=" " />
       <label class="form-label" for="priceD">1000</label>
       <p class="form-text">UAH</p>
     </div>
@@ -196,14 +166,7 @@
     </div>
 
     <div class="form-field">
-      <input
-        class="form-input"
-        disabled="disabled"
-        type="text"
-        name="priceT"
-        id="priceT"
-        placeholder=" "
-      />
+      <input class="form-input" disabled="disabled" type="text" name="priceT" id="priceT" placeholder=" " />
       <label class="form-label" for="priceT">1500</label>
       <p class="form-text">UAH</p>
     </div>
@@ -242,14 +205,7 @@
     </div>
 
     <div class="form-field">
-      <input
-        class="form-input"
-        disabled="disabled"
-        type="text"
-        name="priceF"
-        id="priceF"
-        placeholder=" "
-      />
+      <input class="form-input" disabled="disabled" type="text" name="priceF" id="priceF" placeholder=" " />
       <label class="form-label" for="priceF">2000</label>
       <p class="form-text">UAH</p>
     </div>
