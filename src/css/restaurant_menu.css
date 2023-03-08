@@ -204,7 +204,7 @@
 .menu-wrapper {
   margin-top: 14px;
 }
-.rest-menu-slide {
+.swiper-btn-menu.rest-menu-slide {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -216,9 +216,14 @@
     margin-top: 32px;
   }
 }
+.swiper-button-prev.btn-rest-menu-prev,
+.swiper-button-next.btn-rest-menu-next {
+  margin: 0;
+}
 .btn-rest-menu-prev,
 .btn-rest-menu-next {
   padding: 0;
+  margin: 0;
   border: none;
   background-color: inherit;
 }
