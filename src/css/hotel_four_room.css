@@ -1,3 +1,19 @@
+.pading-four-room {
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  .pading-four-room {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pading-four-room {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
 .img-room {
   display: block;
   max-width: 335px;

@@ -70,11 +70,20 @@
   gap: 16px;
 }
 
+.footer-sociallink{
+
+    cursor: pointer;
+}
+
+
 .footer-icon {
   display: block;
   width: 20px;
   height: 20px;
 }
+  
+  
+
 @media screen and (min-width: 768px) {
   .footer-icon {
     width: 24px;
@@ -100,8 +109,18 @@
   text-transform: uppercase;
 
   color: #121212;
+  cursor: pointer;
+  transition: color var(--transition);
 }
+.footer-nav-link:hover, .footer-nav-link:focus{
+color: rgb(116, 123, 255);;
+}
+
+.footer-icon
+
+
 .footer-icon-content {
   stroke: #121212;
   fill: transparent;
 }
+
