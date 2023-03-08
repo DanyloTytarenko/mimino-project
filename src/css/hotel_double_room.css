@@ -1,258 +1,230 @@
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
+.room-list-picture {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
 }
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+.about-room {
+  width: 686px;
 }
-img {
-  display: block;
+.room-description {
+  display: flex;
 }
-.list {
-  list-style: none;
+.room-description-first {
+  margin-right: 32px;
 }
-.link {
-  text-decoration: none;
-}
-
-.room-list-picture{
-    display: flex;
-    align-items: center;  
-    margin-bottom: 50px;
-}
-.about-room{
-    width: 686px;
-}
-.room-description{
-    display: flex;
-}
-.room-description-first{
-    margin-right: 32px;
-}
-.name-room{    
-    font-family: var(--bold);
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.1;
-    margin-bottom: 40px;
+.name-room {
+  font-family: var(--bold);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 40px;
 }
 
 .btn-styles {
-    border:0.8px Solid #121212;
-    border-radius: 32px;
-    color:#121212;
-    font-weight: 500;
-    font-size: 18px;
-    background-color:transparent;
-    text-transform: uppercase;    
-    line-height: 1.3;   
-    padding: 9px 24px;     
-    transition: var(--transition);   
-  }
-  .btn-styles:hover,
-  .btn-styles:focus {
-    color:#F6F6F6;
-    background-color:#121212;
+  border: 0.8px Solid #121212;
+  border-radius: 32px;
+  color: #121212;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: transparent;
+  text-transform: uppercase;
+  line-height: 1.3;
+  padding: 9px 24px;
+  transition: var(--transition);
 }
-  .luxury-badroom{
+.btn-styles:hover,
+.btn-styles:focus {
+  color: #f6f6f6;
+  background-color: #121212;
+}
+.luxury-badroom {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #121212;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-top: 32px;
+}
+.button-details {
+  margin-right: 14px;
+}
+.room-buttons-list {
+  display: flex;
+  column-gap: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .double-luxury-room-section {
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+  .container-double-room {
+    min-width: 320px;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .room-list-picture {
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    column-gap: 19px;
+    row-gap: 20px;
+  }
+  .picture-kitchen {
+    order: 1;
+  }
+  .luxury-badroom {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .about-room {
+    margin-bottom: 28px;
+  }
+  .room-description {
+    flex-direction: column;
+  }
+  .name-room {
+    font-family: var(--bold);
+    width: 246px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 32px;
+  }
+  .room-description-first {
+    font-size: 14px;
+    width: 355px;
+    margin-bottom: 24px;
+  }
+  .room-description-second {
+    width: 355px;
+  }
+  .btn-styles {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .double-luxury-room-section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  .container-double-room {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .luxury-badroom {
     display: flex;
-    justify-content: space-between;   
-   text-transform: uppercase;
+    flex-direction: column;
+    text-transform: uppercase;
     font-size: 18px;
-    color: #121212;             
+    color: #121212;
     line-height: 1.3;
-    letter-spacing: -.02em;    
+    letter-spacing: 0.02em;
+    margin-bottom: 50px;
   }
-  .button-details{
-    margin-right: 14px;
+  .about-room {
+    margin-bottom: 40px;
   }
-  .room-buttons-list{
-    display: flex;
-    column-gap: 14px;
-}  
-
-  @media screen and (max-width: 767px){
-    .double-luxury-room-section{
-        padding-bottom: 64px;
-        padding-top: 64px;
-    }        
-    .container-double-room{
-        min-width: 320px;
-        max-width: 375px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .room-list-picture{
-        flex-wrap: wrap;
-        margin-bottom: 32px;       
-        column-gap: 19px;
-        row-gap: 20px;      
-    }
-    .picture-kitchen{
-        order: 1;
-    }
-    .luxury-badroom{
-        flex-direction: column;
-    }
-    .about-room{
-        margin-bottom: 28px;
-    }
-    .room-description{
-        flex-direction: column;
-    }    
-    .name-room{
-        font-family: var(--bold);
-        width: 246px;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 1.25;
-        margin-bottom: 32px;
-    }
-    .room-description-first{
-        font-size: 14px;
-        width: 355px;
-         margin-bottom: 24px;
-      }    
-    .room-description-second{
-        width: 355px;
-      } 
-      .btn-styles{
-        font-size: 14px;
-        padding: 8px 18px;
-      }
+  .room-list-picture {
+    position: relative;
+    row-gap: 32px;
+    column-gap: 32px;
+    position: relative;
+    height: 468px;
+    margin-bottom: 40px;
   }
-  @media screen and (min-width: 768px){
-   
-    .double-luxury-room-section{
-        padding-bottom: 80px;
-        padding-top: 80px;
-    }   
-    .container-double-room {
-        max-width: 768px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
-    .luxury-badroom{
-        display: flex;
-        flex-direction: column;          
-       text-transform: uppercase;
-        font-size: 18px;
-        color: #121212;             
-        line-height: 1.3;
-        letter-spacing: 0.02em;        
-      }
-      .about-room{
-        margin-bottom: 40px;
-      }
-      .room-list-picture{
-         position: relative;
-         row-gap: 32px;
-         column-gap: 32px;
-         position: relative;
-         height: 468px;              
-         margin-bottom: 40px;
-    } 
-    .picture-kitchen{
-        order: 1;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-    }            
-    .picture-bedroom{
-        order: 2;
-        position: absolute;
-        right: 0px;
-        top: 0;       
-    }
-    .picture-bathroom{
-        order: 0;
-        position: absolute;
-        top: 0;
-        left: 118px;     
-    }
-    .room-buttons{
-            margin-left: auto;
-        }
-        .img-bathroom{
-            max-width: 223px;
-
-        }
-        .img-kitchen{
-            max-width: 341px;
-
-        }
-        .picture-bedroom{
-            max-width: 331px;
-        }
-        .room-description-first{
-            width: 369px;
-            
-        }
-        .room-description-second{
-            width: 299px;
-        }    
-        .btn-styles{
-            padding: 8px 24px;
-            font-size: 14px;
-          }
+  .picture-kitchen {
+    order: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
-  @media screen and (min-width: 1440px){
-    .container-double-room{
-        max-width: 1376px;
-        padding-left: 32px;
-        padding-right: 32px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .double-luxury-room-section{
-        padding-bottom: 100px;
-        padding-top: 100px;
-    }
-    .room-list-picture{
-        height: 762px;
-        column-gap: 32px;
-    }
-    .room-description-first{
-        width: 355px;        
-    }
-    .room-description-second{
-        width: 299px;
-    }
-   
-    .picture-bathroom {
-        order: 3;
-        position: relative;
-        left: 0;
-    }
-    .picture-bedroom {
-        order: 2;
-        position: relative;}
-       .picture-kitchen{
-        order: 1;
-        position: relative;
-        }
-        .img-bathroom{
-            max-width: 387px;
-
-        }
-        .img-kitchen{
-            max-width: 386px;
-
-        }
-        .picture-bedroom{
-            max-width: 539px;
-        }
-              
-    
+  .picture-bedroom {
+    order: 2;
+    position: absolute;
+    right: 0px;
+    top: 0;
   }
+  .picture-bathroom {
+    order: 0;
+    position: absolute;
+    top: 0;
+    left: 118px;
+  }
+  .room-buttons {
+    margin-left: auto;
+  }
+  .img-bathroom {
+    max-width: 223px;
+  }
+  .img-kitchen {
+    max-width: 341px;
+  }
+  .picture-bedroom {
+    max-width: 331px;
+  }
+  .room-description-first {
+    width: 369px;
+  }
+  .room-description-second {
+    width: 299px;
+  }
+  .btn-styles {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container-double-room {
+    max-width: 1376px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .double-luxury-room-section {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .room-list-picture {
+    height: 762px;
+    column-gap: 32px;
+  }
+  .room-description-first {
+    width: 355px;
+  }
+  .room-description-second {
+    width: 299px;
+  }
+
+  .picture-bathroom {
+    order: 3;
+    position: relative;
+    left: 0;
+  }
+  .picture-bedroom {
+    order: 2;
+    position: relative;
+  }
+  .picture-kitchen {
+    order: 1;
+    position: relative;
+  }
+  .img-bathroom {
+    max-width: 387px;
+  }
+  .img-kitchen {
+    max-width: 386px;
+  }
+  .picture-bedroom {
+    max-width: 539px;
+  }
+}

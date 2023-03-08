@@ -1,9 +1,9 @@
-<section class="section rest-menu-section">
+<section class="section rest-menu-section" id="menu">
   <div class="container rest-menu-container">
     <h2 class="rest-title">RESTAURANT MENU</h2>
-    <div class="rest-menu-slide-wrapper">
-      <ul class="rest-menu-title list">
-        <li class="rest-menu-page">
+    <div class="swiper menu-swiper">
+      <ul class="rest-menu-title list swiper-wrapper">
+        <li class="swiper-slide rest-menu-page">
           <p class="menu-page-title">Hot meals</p>
           <ul class="rest-menu-list list">
             <li class="rest-menu-item">
@@ -72,7 +72,7 @@
             </li>
           </ul>
         </li>
-        <li class="rest-menu-page">
+        <li class="swiper-slide rest-menu-page">
           <p class="menu-page-title">Side dishes and snacks</p>
           <ul class="rest-menu-list list">
             <li class="rest-menu-item">
@@ -134,7 +134,7 @@
             </li>
           </ul>
         </li>
-        <li class="rest-menu-page">
+        <li class="swiper-slide rest-menu-page">
           <p class="menu-page-title">Salads</p>
           <ul class="rest-menu-list list">
             <li class="rest-menu-item">
@@ -191,7 +191,7 @@
             </li>
           </ul>
         </li>
-        <li class="rest-menu-page">
+        <li class="swiper-slide rest-menu-page">
           <p class="menu-page-title">Desserts</p>
           <ul class="rest-menu-list list">
             <li class="rest-menu-item">
@@ -238,75 +238,26 @@
           </div>
         </li>
       </ul>
+      <div class="swiper-btn-menu">
+        <div class="swiper-button-prev">
+          <svg width="24" height="24">
+            <use
+              class="swiper-btn-content light"
+              href="img/icons.svg#prev"
+            ></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg width="24" height="24">
+            <use
+              class="swiper-btn-content light"
+              href="img/icons.svg#next"
+            ></use>
+          </svg>
+        </div>
+      </div>
     </div>
-    <div class="rest-menu-slide">
-      <button class="btn-rest-menu-prev button" type="button">
-        <svg
-          class="img-btn-prev-small"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-        >
-          <path
-            stroke="#F7F7F7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-opacity=".3"
-            stroke-width="1.8"
-            d="M14.666 16.667 9.999 12l4.667-4.666"
-          />
-        </svg>
-        <svg
-          class="img-btn-prev-large"
-          xmlns="http://www.w3.org/2000/svg"
-          width="36"
-          height="36"
-          fill="none"
-        >
-          <path
-            stroke="#F7F7F7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-opacity=".3"
-            stroke-width="2"
-            d="m22 25-7-7 7-7"
-          />
-        </svg>
-      </button>
-      <button class="btn-rest-menu-next button" type="button">
-        <svg
-          class="img-btn-next-small"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-        >
-          <path
-            stroke="#F7F7F7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.8"
-            d="m9.331 16.668 4.667-4.666-4.667-4.667"
-          />
-        </svg>
-        <svg
-          class="img-btn-next-large"
-          xmlns="http://www.w3.org/2000/svg"
-          width="36"
-          height="36"
-          fill="none"
-        >
-          <path
-            stroke="#F7F7F7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="m14 25 7-7-7-7"
-          />
-        </svg>
-      </button>
-    </div>
+
     <button
       class="btn-book-table-dark button js-open-modal"
       type="button"

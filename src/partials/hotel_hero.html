@@ -15,7 +15,7 @@
           </li>
           <li>
             <button
-              class="hotel-hero-btn js-open-modal"
+              class="button-four js-open-modal"
               data-modal="3"
               type="button"
             >
@@ -29,9 +29,9 @@
           something for everyone.
         </p>
       </div>
-      <div class="slide-wrapper">
-        <ul class="hero-slider">
-          <li>
+      <div class="swiper hero-swiper">
+        <ul class="hero-slider swiper-wrapper">
+          <li class="swiper-slide">
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -66,7 +66,7 @@
               />
             </picture>
           </li>
-          <li>
+          <li class="swiper-slide">
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -101,7 +101,7 @@
               />
             </picture>
           </li>
-          <li>
+          <li class="swiper-slide">
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -137,23 +137,17 @@
             </picture>
           </li>
         </ul>
-        <div class="btn-wrap-hero">
-          <button class="prev-btn">
-            <svg class="prev-btn-icon">
-              <use
-                class="prev-btn-icon-content"
-                href="img/icons.svg#prev"
-              ></use>
+        <div class="swiper-btn-hero">
+          <div class="swiper-button-prev">
+            <svg width="24" height="24">
+              <use class="swiper-btn-content" href="img/icons.svg#prev"></use>
             </svg>
-          </button>
-          <button class="next-btn">
-            <svg class="next-btn-icon">
-              <use
-                class="next-btn-icon-content"
-                href="img/icons.svg#next"
-              ></use>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="" width="24" height="24">
+              <use class="swiper-btn-content" href="img/icons.svg#next"></use>
             </svg>
-          </button>
+          </div>
         </div>
       </div>
     </div>
