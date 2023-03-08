@@ -14,6 +14,8 @@
 @media screen and (min-width: 1440px) {
   .header {
     position: absolute;
+    left: 0;
+      right: 0;
     background-color: transparent;
     width: 100%;
     background-repeat: no-repeat;
