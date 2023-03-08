@@ -75,20 +75,17 @@ padding-left: 32px;
 
 .main-restaurant-list {
   display: flex;
-  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .main-restaurant-list {
     justify-content: space-between;
-    margin-bottom: 43px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .main-restaurant-list {
     justify-content: space-between;
-    margin-bottom: 61px;
   }
 }
 

@@ -322,6 +322,7 @@ feature/about-complex .review-maria {
     flex-direction: row-reverse;
   }
   .img-1 {
+    margin: 0;
     width: 482px;
     height: 636px;
   }

@@ -1,14 +1,116 @@
+.swiper-btn {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+}
+.swiper-btn-hero {
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+  margin-top: 24px;
+}
+.swiper-btn-menu {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
 .swiper-button-next,
 .swiper-button-prev {
-  color: #121212;
-
-  top: 100%;
-  background-image: url(img/next.svg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
+  position: static;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
   display: none;
+}
+.swiper-btn-content {
+  fill: #f7f7f7;
+  stroke: #121212;
+}
+.light {
+  stroke: #f7f7f7;
+  fill: #121212;
+}
+.swiper-restaurant {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+.hero-swiper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.menu-swiper {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.hero-swiper.swiper-btn {
+  justify-content: end;
+}
+@media screen and (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-btn-hero {
+    gap: 40px;
+    margin-top: 36px;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+  }
+  .hero-swiper {
+    position: static;
+  }
+  .hotel-hero-container,
+  .rest-hero-container,
+  .room-hero-container {
+    position: relative;
+  }
+  .swiper-btn-menu {
+    margin-top: 36px;
+  }
+  .menu-swiper {
+    gap: 32px;
+    max-width: 516px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu-swiper {
+    display: contents;
+  }
+  .swiper-btn-menu {
+    display: none;
+  }
+  .swiper-restaurant {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    margin-bottom: 0;
+  }
+  .swiper-btn {
+    justify-content: center;
+  }
+  .swiper-btn-hero {
+    justify-content: start;
+  }
+  .swiper-btn-hero {
+    position: static;
+    gap: 16px;
+  }
+  .rest-menu-page {
+    width: 515px;
+  }
 }
