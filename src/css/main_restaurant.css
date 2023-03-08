@@ -204,7 +204,10 @@ padding-left: 32px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.btn-view-menu-light {
+  border: 0.8px solid #f7f7f7;
+  color: #f7f7f7;
+}
 @media screen and (min-width: 768px) {
   .btn-view-menu {
     font-size: 14px;
@@ -226,5 +229,12 @@ padding-left: 32px;
   color: #f7f7f7;
   background-color: #121212;
   border: 0.8px solid #f7f7f7;
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+.btn-view-menu-light:hover,
+.btn-view-menu-light:focus {
+  color: #121212;
+  background-color: #f7f7f7;
+  border: 0.8px solid #121212;
   box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
 }

@@ -15,171 +15,141 @@
   }
 }
 
-.container {
-  max-width: 375px;
+.img-kitchen-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
 }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
-.container-about-kitchen {
-  position: relative;
-  text-transform: uppercase;
-  color: #121212;
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-}
-
-.img-kitchen-chief {
+.img-chief {
   display: block;
   max-width: 335px;
 }
-.img-kitchen-meat {
+.img-meat {
   display: block;
   max-width: 158px;
 }
-.img-kitchen-cocktail {
+.img-cocktail {
   display: block;
-  max-width: 157px;
+  max-width: 158px;
 }
 @media screen and (min-width: 768px) {
-  .img-kitchen-chief {
+  .img-kitchen-block {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    gap: 16px 32px;
+    height: 515px;
+  }
+  .img-chief {
     max-width: 388px;
   }
-  .img-kitchen-meat {
+  .img-meat {
     max-width: 284px;
   }
-  .img-kitchen-cocktail {
+  .img-cocktail {
     max-width: 284px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .img-kitchen-chief {
+  .img-chief {
     max-width: 511px;
   }
-  .img-kitchen-meat {
+  .img-meat {
     max-width: 334px;
   }
-  .img-kitchen-cocktail {
+  .img-cocktail {
     max-width: 467px;
   }
 }
-
-.img-kitchen {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 32px;
-}
-
 @media screen and (min-width: 768px) {
-  .img-kitchen {
-    flex-direction: row-reverse;
-    margin-bottom: 40px;
-    row-gap: 16px;
-    column-gap: 32px;
+  .img-chief-item {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .img-meat-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .img-cocktail-item {
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .img-kitchen {
-    flex-direction: row;
-  }
-}
-
-.images-kitchen-wrapper {
-  display: flex;
-  gap: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .images-kitchen-wrapper {
-    row-gap: 32px;
+  .img-kitchen-block {
+    display: flex;
     flex-wrap: wrap;
-    column-gap: 16px;
+    justify-content: center;
+    position: relative;
+    gap: 32px;
+    height: 100%;
+  }
+  .img-chief-item {
+    position: relative;
+  }
+  .img-meat-item {
+    position: relative;
+    left: 0;
+  }
+  .img-cocktail-item {
+    order: 1;
+    position: relative;
   }
 }
-@media screen and (min-width: 1440px) {
-  .images-kitchen-wrapper {
-    column-gap: 32px;
-  }
-}
-
 .text-kitchen-wrapper {
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-
+.text-kitchen {
+  max-width: 335px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.italic {
+  font-family: var(--regular-italic);
+}
 @media screen and (min-width: 768px) {
   .text-kitchen-wrapper {
     flex-direction: row;
     gap: 32px;
+    justify-content: center;
   }
-}
-
-@media screen and (min-width: 1440px) {
-  .text-kitchen-wrapper {
-    display: flex;
-    align-items: flex-end;
-    padding: 0px;
-    gap: 32px;
-    position: absolute;
-    width: 1376px;
-    height: 598px;
-    left: 18px;
-    top: 0px;
-    justify-content: flex-end;
-  }
-}
-
-.text-kitchen {
-  text-overflow: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-}
-@media screen and (min-width: 768px) {
   .text-kitchen {
+    max-width: 349px;
     font-size: 18px;
     line-height: 1.33;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .text-kitchen:first-child {
-    width: 334px;
+@media screen and (min-width: 1440px) {
+  .text-kitchen-wrapper {
+    position: absolute;
+    width: 833px;
+    top: 65%;
+    right: 0;
   }
-
-  .text-kitchen:last-child {
-    width: 467px;
+  .rest-about-wrapper {
+    position: relative;
   }
-}
-.italic {
-  font-style: italic;
+  .text-kitchen {
+    font-family: var(--medium);
+  }
+  .text-kitchen:nth-child(1) {
+    max-width: 334px;
+  }
+  .text-kitchen:nth-child(2) {
+    max-width: 453px;
+  }
+  .italic {
+    font-family: var(--medium-italic);
+  }
 }

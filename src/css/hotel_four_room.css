@@ -164,6 +164,8 @@
 }
 @media screen and (min-width: 1440px) {
   .button-four {
+    font-size: 18px;
+    line-height: 1.33;
     padding: 9px 24px;
   }
 }

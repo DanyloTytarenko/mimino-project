@@ -115,7 +115,7 @@ feature/about-complex .review-maria {
   transform: scale(1.5);
   overflow: visible;
   opacity: 1;
-  transition: ease;
+  transition: all var(--transition);
 }
 
 .review-maria:hover .overlay,
@@ -163,13 +163,12 @@ feature/about-complex .review-maria {
 .review-alexander:focus {
   transform: scale(1.5);
   overflow: visible;
-  /* transition: 0.3s ease; */
+  transition: all var(--transition);
 }
 .review-alexander:hover .overlay-alexander,
 .review-alexander:focus .overlay-alexander {
   transform: translate(0, 40%);
   opacity: 1;
-  transition: 0.3s ease;
 }
 
 .alexander {
@@ -184,8 +183,8 @@ feature/about-complex .review-maria {
   height: 100%;
   font-size: 10px;
   margin: 0;
-  /* opacity: 0; */
-  /* font-weight: 7px; */
+  /* opacity: 0;
+font-weight: 7px; */
   line-height: 1.5;
   padding-top: 10px;
   padding-left: 10px;
