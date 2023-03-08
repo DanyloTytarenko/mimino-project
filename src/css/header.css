@@ -272,8 +272,7 @@ body {
 }
 
 /* Mobile menu */
-.menu-container,
-.menu-container-light {
+.menu-container {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -288,13 +287,13 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-container-light {
+.menu-light {
   background-color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 1440px) {
   .menu-container,
-  .menu-container-light {
+  .menu-light {
     display: none;
   }
 }
