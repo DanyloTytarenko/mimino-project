@@ -1,6 +1,18 @@
 .section-triple-room {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+    .section-triple-room {
+        padding-top: 40px;
+        padding-bottom: 40px;
+}
+}
+@media screen and (min-width: 1440px) {
+    .section-triple-room {
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
 }
 .container-triple-room {
     position: relative;
@@ -8,7 +20,7 @@
     text-transform: uppercase;
     color: #121212;
 }
-.img-triple-room {
+/* .img-triple-room {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -62,7 +74,79 @@
         justify-content: space-between;
         align-items: center;
     }
+} */
+/* |=========================|  |=========================| */
+.img-triple-room {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .img-triple-room {
+    justify-content: flex-start;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .img-triple-room {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+.triple-room-bedroom {
+ max-width: 335px;
+}
+@media screen and (min-width: 768px) {
+  .triple-room-bedroom {
+    max-width: 331px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .triple-room-bedroom {
+    max-width: 539px;
+  }
+}
+.triple-room-bahtroom {
+  max-width: 158px;
+}
+@media screen and (min-width: 768px) {
+  .triple-room-bahtroom {
+    max-width: 223px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .triple-room-bahtroom {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 387px;
+  }
+}
+.triple-room-kitchen {
+  max-width: 157px;
+}
+@media screen and (min-width: 768px) {
+  .triple-room-kitchen {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 341px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .triple-room-kitchen {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 386px;
+  }
+}
+/* |=========================|  |=========================| */
 .triple-room-title {
     font-family: var(--bold);
     font-size: 32px;
