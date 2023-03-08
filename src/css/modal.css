@@ -1,4 +1,4 @@
-.overlay {
+.modal-overlay {
   overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
@@ -46,7 +46,7 @@
 }
 
 .modal.active,
-.overlay.active {
+.modal-overlay.active {
   opacity: 1;
   visibility: visible;
 }
