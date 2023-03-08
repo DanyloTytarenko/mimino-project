@@ -1,6 +1,18 @@
 .section-triple-room {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+    .section-triple-room {
+        padding-top: 40px;
+        padding-bottom: 40px;
+}
+}
+@media screen and (min-width: 1440px) {
+    .section-triple-room {
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
 }
 .container-triple-room {
     position: relative;
