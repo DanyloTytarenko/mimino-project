@@ -86,27 +86,27 @@ const swiper3 = new Swiper('.menu-swiper', {
   // Responsive breakpoints
 });
 
-let init = true;
-let desktop = window.matchMedia('(min-width: 1440px)');
-if (desktop.matches) {
-  swiper.destroy();
-  init = false;
-} else {
-  init = true;
-  const swiper3 = new Swiper('.menu-swiper', {
-    // Optional parameters
-    modules: [Navigation],
-    direction: 'horizontal',
-    navigation: true,
-    loop: false,
+// let init = true;
+// let desktop = window.matchMedia('(min-width: 1440px)');
+// if (desktop.matches) {
+//   swiper3.destroy();
+//   init = false;
+// } else {
+//   init = true;
+//   const swiper3 = new Swiper('.menu-swiper', {
+//     // Optional parameters
+//     modules: [Navigation],
+//     direction: 'horizontal',
+//     navigation: true,
+//     loop: false,
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 1,
-    spaceBetween: 50,
-    // Responsive breakpoints
-  });
-}
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//     slidesPerView: 1,
+//     spaceBetween: 50,
+//     // Responsive breakpoints
+//   });
+// }
