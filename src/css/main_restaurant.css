@@ -93,11 +93,22 @@ padding-left: 32px;
   display: none;
 }
 
+.main-restaurant-item {
+  display: flex;
+}
+
+.mob-slider {
+  display: flex;
+}
+
 @media screen and (min-width: 1440px) {
   .main-restaurant-item-desktop {
-    display: block;
+    display: flex;
   }
   .main-restaurant-item {
+    display: none;
+  }
+  .mob-slider {
     display: none;
   }
 }
