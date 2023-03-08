@@ -1,4 +1,4 @@
-.overlay {
+.modal-overlay {
   overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
@@ -45,7 +45,7 @@
 }
 
 .modal.active,
-.overlay.active {
+.modal-overlay.active {
   opacity: 1;
   visibility: visible;
 }
@@ -181,7 +181,7 @@ select {
 input[type='date']::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
-  background: url(img/modal-arrow.svg) no-repeat center;
+  background: url(../img/modal-arrow.svg) no-repeat center;
   background-size: 20px 20px;
 }
 @media screen and (max-width: 375px) {
