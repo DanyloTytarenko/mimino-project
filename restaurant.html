@@ -10,7 +10,7 @@
 
   
   <script type="module" crossorigin src="/mimino-project/assets/mobile-menu-d0497a11.js"></script>
-  <link rel="stylesheet" href="/mimino-project/assets/mobile-menu-760ca582.css">
+  <link rel="stylesheet" href="/mimino-project/assets/mobile-menu-f51898b9.css">
 </head>
 
 <body>
@@ -167,7 +167,12 @@
             </button>
           </li>
           <li>
-            <button class="rest-hero-btn" type="button">View a menu</button>
+            <a
+              class="btn-view-menu button"
+              href="restaurant.html#menu"
+              target="_blank"
+              >view a menu
+            </a>
           </li>
         </ul>
         <p class="rest-hero-txt desk">
@@ -259,19 +264,13 @@
         </ul>
         <div class="swiper-btn-hero">
           <div class="swiper-button-prev">
-            <svg  width="24" height="24">
-              <use
-                class="swiper-btn-content"
-                href="/mimino-project/assets/icons-a72497a1.svg#prev"
-              ></use>
+            <svg width="24" height="24">
+              <use class="swiper-btn-content" href="/mimino-project/assets/icons-a72497a1.svg#prev"></use>
             </svg>
           </div>
           <div class="swiper-button-next">
-            <svg  width="24" height="24">
-              <use
-                class="swiper-btn-content"
-                href="/mimino-project/assets/icons-a72497a1.svg#next"
-              ></use>
+            <svg width="24" height="24">
+              <use class="swiper-btn-content" href="/mimino-project/assets/icons-a72497a1.svg#next"></use>
             </svg>
           </div>
         </div>
@@ -286,64 +285,114 @@
 </section>
 
     <!-- About a kitchen section -->
-<section class="section section-about-kitchen">
-    <div class="container container-about-kitchen">
-        <h2 class="visually-hidden" hidden>About a kitchen</h2>
-        <div class="img-kitchen">
-            <picture class="img-kitchen-chief">
-                <source type="image/jpg" media="(min-width: 1440px)"
-                    srcset="/mimino-project/assets/img-chief_511-ae4fb517.jpg 1x, /mimino-project/assets/img-chief_1022-bb8d1c7f.jpg 2x">
-                <source type="image/jpg" media="(min-width: 768px)"
-                    srcset="/mimino-project/assets/img-chief_388-25fe9ca3.jpg 1x, /mimino-project/assets/img-chief_776-e2131676.jpg 2x">
-                <source type="image/jpg" media="(min-width: 320px)"
-                    srcset="/mimino-project/assets/img-chief_388-25fe9ca3.jpg 1x, /mimino-project/assets/img-chief_776-e2131676.jpg 2x">
-                <img src="/mimino-project/assets/img-chief_388-25fe9ca3.jpg" alt="image of chief" width="511" height="598"
-                    loading="lazy">
-            </picture>
-            <div class="images-kitchen-wrapper">
-                <picture class="img-kitchen-meat">
-                    <source type="image/jpg" media="(min-width: 1440px)"
-                        srcset="/mimino-project/assets/img-meat_334-1747712c.jpg 1x, /mimino-project/assets/img-meat_668-67b06934.jpg 2x">
-                    <source type="image/jpg" media="(min-width: 768px)"
-                        srcset="/mimino-project/assets/img-meat_284-cb012039.jpg 1x, /mimino-project/assets/img-meat_568-278459fd.jpg 2x">
-                    <source type="image/jpg" media="(min-width: 320px)"
-                        srcset="/mimino-project/assets/img-meat_158-09d685aa.jpg 1x, /mimino-project/assets/img-meat_316-aa82d98a.jpg 2x">
-                    <img src="/mimino-project/assets/img-meat_158-09d685aa.jpg" alt="image of meat" width="334" height="389"
-                        loading="lazy">
-                </picture>
-                <picture class="img-kitchen-cocktail">
-                    <source type="image/jpg" media="(min-width: 1440px)"
-                        srcset="/mimino-project/assets/img-cocktail_467-f1a96273.jpg 1x, /mimino-project/assets/img-cocktail_934-5bba9e23.jpg 2x">
-                    <source type="image/jpg" media="(min-width: 768px)"
-                        srcset="/mimino-project/assets/img-cocktail_284-a0974463.jpg 1x, /mimino-project/assets/img-cocktail_568-91535da5.jpg 2x">
-                    <source type="image/jpg" media="(min-width: 320px)"
-                        srcset="/mimino-project/assets/img-cocktail_284-a0974463.jpg 1x, /mimino-project/assets/img-cocktail_568-91535da5.jpg 2x">
-                    <img src="/mimino-project/assets/img-cocktail_284-a0974463.jpg" alt="image of cocktail" width="467" height="389"
-                        loading="lazy">
-                </picture>
-            </div>
-        </div>
-        <div class="text-kitchen-wrapper">
-            <p class="text-kitchen">
-                At Mimino, we are experts in <span class="italic">meat preparation.</span> Our chefs use only the
-                finest and
-                freshest ingredients
-                <span class="italic">to create
-                    delicious dishes</span> that showcase the flavors of premium cuts of meat.
-            </p>
-            <p class="text-kitchen">Our <span class="italic">slow-cooking process</span> and expert seasoning bring out
-                the best in each
-                dish,
-                making
-                for an
-                unforgettable dining
-                experience. Come taste the magic<span class="italic">of meat preparation at</span> Mimino.
-            </p>
-        </div>
-
-    </div>
+<section class="container section">
+  <div class="rest-about-wrapper">
+    <h2 class="visually-hidden" hidden>About a kitchen</h2>
+    <ul class="img-kitchen-block">
+      <li class="img-chief-item">
+        <picture class="img-chief">
+          <source
+            type="image/jpg"
+            media="(min-width: 1440px)"
+            srcset="/mimino-project/assets/img-chief_511-ae4fb517.jpg 1x, /mimino-project/assets/img-chief_1022-bb8d1c7f.jpg 2x"
+          />
+          <source
+            type="image/jpg"
+            media="(min-width: 768px)"
+            srcset="/mimino-project/assets/img-chief_388-25fe9ca3.jpg 1x, /mimino-project/assets/img-chief_776-e2131676.jpg 2x"
+          />
+          <source
+            type="image/jpg"
+            media="(min-width: 320px)"
+            srcset="/mimino-project/assets/img-chief_388-25fe9ca3.jpg 1x, /mimino-project/assets/img-chief_776-e2131676.jpg 2x"
+          />
+          <img
+            src="/mimino-project/assets/img-chief_388-25fe9ca3.jpg"
+            alt="image of chief"
+            width="511"
+            height="598"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="img-meat-item">
+        <picture class="img-meat">
+          <source
+            type="image/jpg"
+            media="(min-width: 1440px)"
+            srcset="/mimino-project/assets/img-meat_334-1747712c.jpg 1x, /mimino-project/assets/img-meat_668-67b06934.jpg 2x"
+          />
+          <source
+            type="image/jpg"
+            media="(min-width: 768px)"
+            srcset="/mimino-project/assets/img-meat_284-cb012039.jpg 1x, /mimino-project/assets/img-meat_568-278459fd.jpg 2x"
+          />
+          <source
+            type="image/jpg"
+            media="(min-width: 320px)"
+            srcset="/mimino-project/assets/img-meat_158-09d685aa.jpg 1x, /mimino-project/assets/img-meat_316-aa82d98a.jpg 2x"
+          />
+          <img
+            src="/mimino-project/assets/img-meat_158-09d685aa.jpg"
+            alt="image of meat"
+            width="334"
+            height="389"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="img-cocktail-item">
+        <picture class="img-cocktail">
+          <source
+            type="image/jpg"
+            media="(min-width: 1440px)"
+            srcset="/mimino-project/assets/img-cocktail-desc-7e335c69.jpg 1x, /mimino-project/assets/img-cocktail-desc@2x-ef325509.jpg 2x"
+          />
+          <source
+            type="image/jpg"
+            media="(min-width: 768px)"
+            srcset="/mimino-project/assets/img-cocktail_467-f1a96273.jpg 1x, /mimino-project/assets/img-cocktail_934-5bba9e23.jpg 2x"
+          />
+          <source
+            type="image/jpg"
+            media="(min-width: 320px)"
+            srcset="/mimino-project/assets/img-cocktail_157-a0974463.jpg 1x, /mimino-project/assets/img-cocktail_314-91535da5.jpg 2x"
+          />
+          <img
+            src="/mimino-project/assets/img-cocktail_157-a0974463.jpg"
+            alt="image of cocktail"
+            width="467"
+            height="389"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
+    <ul class="text-kitchen-wrapper">
+      <li class="text-kitchen">
+        <p>
+          At Mimino, we are experts in
+          <span class="italic">meat preparation.</span> Our chefs use only the
+          finest and freshest ingredients
+          <span class="italic">to create delicious dishes</span> that showcase
+          the flavors of premium cuts of meat.
+        </p>
+      </li>
+      <li class="text-kitchen">
+        <p>
+          Our <span class="italic">slow-cooking process</span> and expert
+          seasoning bring out the best in each dish, making for an unforgettable
+          dining experience. Come taste the magic<span class="italic"
+            >of meat preparation at</span
+          >
+          Mimino.
+        </p>
+      </li>
+    </ul>
+  </div>
 </section>
-    <section class="section rest-menu-section">
+
+    <section class="section rest-menu-section" id="menu">
   <div class="container rest-menu-container">
     <h2 class="rest-title">RESTAURANT MENU</h2>
     <div class="swiper menu-swiper">
