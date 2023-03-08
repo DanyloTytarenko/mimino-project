@@ -15,7 +15,7 @@
   .header {
     position: absolute;
     left: 0;
-      right: 0;
+    right: 0;
     background-color: transparent;
     width: 100%;
     background-repeat: no-repeat;
@@ -23,6 +23,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .header,
   .header-light {
     padding: 20px 0;
@@ -144,10 +145,12 @@
 .menu-toggle .menu-close-dark {
   display: none;
 }
+
 .menu-toggle.is-open .menu-close,
 .menu-toggle.is-open .menu-close-dark {
   display: block;
 }
+
 .menu-toggle.is-open .menu-icon,
 .menu-toggle.is-open .menu-icon-dark {
   display: none;
@@ -160,6 +163,8 @@
   }
 }
 
+
+
 .social-icon,
 .social-icon-dark {
   fill: transparent;
@@ -170,6 +175,8 @@
 .social-icon {
   stroke: rgb(246, 246, 246);
 }
+
+
 
 .menu-icon-dark,
 .menu-close-dark,
@@ -197,6 +204,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .header-logo,
   .header-logo-dark {
     font-size: 20px;
@@ -220,6 +228,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .header-logo-light,
   .header-logo-light-dark {
     font-size: 8px;
@@ -265,11 +274,13 @@
 }
 
 @media screen and (min-width: 1440px) {
+
   .menu-container,
   .menu-light {
     display: none;
   }
 }
+
 .menu-container.is-open,
 .menu-container-light.is-open {
   transform: translateX(0);
@@ -311,6 +322,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .menu-navlink,
   .menu-navlink-dark {
     font-size: 28px;
