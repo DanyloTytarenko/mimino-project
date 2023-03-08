@@ -11,21 +11,28 @@
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
 
-@media screen and (min-width: 1440px) {
-  .header {
-    position: absolute;
-    left: 0;
-      right: 0;
-    background-color: transparent;
-    width: 100%;
-    background-repeat: no-repeat;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
   .header,
   .header-light {
     padding: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 32px;
+    padding-left: 32px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -40,7 +47,10 @@
 
 @media screen and (min-width: 1440px) {
   .header-wrapper {
-    gap: 509px;
+    padding-left: 0;
+      padding-right: 0;
+      margin: 0 auto;
+    gap: 480px;
   }
 }
 

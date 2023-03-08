@@ -95,6 +95,11 @@
 
 @media screen and (min-width: 1440px) {
   .main-hero-section {
+    max-width: 1440px;
+    margin-right: auto;
+      margin-left: auto;
+    padding-right: 32px;
+    padding-left: 32px;
     padding-bottom: 48px;
 
         background-size: 542px 770px;
@@ -122,6 +127,8 @@
 
 @media screen and (min-width: 1440px) {
   .main-hero-container {
+    padding-left: 0;
+    padding-right: 0;
     margin: 0 auto;
   }
 }
