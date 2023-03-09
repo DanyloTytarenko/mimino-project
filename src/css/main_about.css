@@ -277,11 +277,6 @@ font-weight: 7px; */
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-  .container-about {
-    width: 704px;
-    margin: 0 auto;
-    flex-direction: column;
-  }
   .img-2 {
     position: absolute;
     top: 209px;
@@ -338,10 +333,6 @@ font-weight: 7px; */
   }
 }
 @media screen and (min-width: 1440px) {
-  .container-about {
-    width: 1376px;
-    margin: 0 auto;
-  }
   .complex-wrapper {
     display: flex;
     gap: 364px;

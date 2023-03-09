@@ -11,21 +11,26 @@
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
 
-@media screen and (min-width: 1440px) {
-  .header {
-    position: absolute;
-    left: 0;
-      right: 0;
-    background-color: transparent;
-    width: 100%;
-    background-repeat: no-repeat;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .header,
   .header-light {
     padding: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 32px;
+    padding-left: 32px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -40,7 +45,10 @@
 
 @media screen and (min-width: 1440px) {
   .header-wrapper {
-    gap: 509px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    gap: 480px;
   }
 }
 
@@ -144,10 +152,12 @@
 .menu-toggle .menu-close-dark {
   display: none;
 }
+
 .menu-toggle.is-open .menu-close,
 .menu-toggle.is-open .menu-close-dark {
   display: block;
 }
+
 .menu-toggle.is-open .menu-icon,
 .menu-toggle.is-open .menu-icon-dark {
   display: none;
@@ -163,12 +173,18 @@
 .social-icon,
 .social-icon-dark {
   fill: transparent;
+  transition: stroke var(--transition);
 }
 
 .menu-icon,
 .menu-close,
 .social-icon {
   stroke: rgb(246, 246, 246);
+  transition: stroke var(--transition);
+}
+.social-icon:hover,
+.social-icon:focus {
+  stroke: #08e598;
 }
 
 .menu-icon-dark,
@@ -270,6 +286,7 @@
     display: none;
   }
 }
+
 .menu-container.is-open,
 .menu-container-light.is-open {
   transform: translateX(0);
@@ -304,12 +321,18 @@
   text-transform: uppercase;
 
   color: rgb(247, 247, 247);
+  transition: color var(--transition);
 }
 
 .menu-navlink-dark {
   color: rgb(18, 18, 18);
 }
-
+.menu-navlink:hover,
+.menu-navlink-dark:hover,
+.menu-navlink:focus,
+.menu-navlink-dark:focus {
+  color: rgb(116, 123, 255);
+}
 @media screen and (min-width: 768px) {
   .menu-navlink,
   .menu-navlink-dark {
@@ -333,4 +356,12 @@
   display: flex;
   gap: 14px;
   align-items: center;
+}
+.social-icon-link {
+  display: flex;
+  align-items: center;
+}
+.social-icon-dark:hover,
+.social-icon-dark:focus {
+  stroke: rgb(116, 123, 255);
 }
