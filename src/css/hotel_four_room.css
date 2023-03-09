@@ -156,7 +156,6 @@
   }
 }
 .button-four {
-  width: 160px;
   display: flex;
   border: 0.8px solid #121212;
   border-radius: 32px;
@@ -181,9 +180,10 @@
 }
 @media screen and (min-width: 1440px) {
   .button-four {
+    width: 154px;
     font-size: 18px;
     line-height: 1.33;
-    padding: 9px 24px;
+    padding: 8.7px 24px;
   }
 }
 .block-button {

@@ -75,8 +75,6 @@
     right: 25px;
   }
   .hero-swiper {
-    margin-left: auto;
-    width: 650px;
     position: static;
   }
   .hotel-hero-container,
@@ -93,6 +91,10 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .hero-swiper {
+    margin-left: auto;
+    width: 650px;
+  }
   .desk-slider.swiper-slide {
     display: block;
   }
