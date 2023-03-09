@@ -156,13 +156,13 @@
   }
 }
 .button-four {
+  width: 160px;
   display: flex;
   border: 0.8px solid #121212;
   border-radius: 32px;
   padding: 8px 18px;
   background-color: transparent;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   transition: var(--transition);
@@ -176,6 +176,7 @@
 @media screen and (min-width: 768px) {
   .button-four {
     padding: 8px 24px;
+    line-height: 1.71;
   }
 }
 @media screen and (min-width: 1440px) {

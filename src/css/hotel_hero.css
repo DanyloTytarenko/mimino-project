@@ -74,8 +74,7 @@
   border: 0.8px solid;
   border-radius: 32px;
 
-  transition: background-color var(--transition),
-    color var(--transition);
+  transition: background-color var(--transition), color var(--transition);
 }
 
 .hotel-hero-btn:hover,
@@ -94,6 +93,7 @@
 
 @media screen and (min-width: 1440px) {
   .hotel-hero-btn {
+    width: 170px;
     padding: 9px 23px;
 
     font-size: 18px;
@@ -144,7 +144,7 @@
 }
 
 .hotel-hero-txt {
-  width: 338px;
+  max-width: 338px;
 
   font-size: 14px;
   line-height: calc(18 / 14);

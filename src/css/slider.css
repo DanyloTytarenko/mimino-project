@@ -3,6 +3,9 @@
   gap: 32px;
   margin-top: 24px;
 }
+.desk-slider.swiper-slide {
+  display: none;
+}
 .swiper-btn-hero {
   display: flex;
   justify-content: end;
@@ -72,6 +75,8 @@
     right: 25px;
   }
   .hero-swiper {
+    margin-left: auto;
+    width: 650px;
     position: static;
   }
   .hotel-hero-container,
@@ -88,6 +93,12 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .desk-slider.swiper-slide {
+    display: block;
+  }
+  .mob-slider.swiper-slide {
+    display: none;
+  }
   .menu-swiper {
     display: contents;
   }

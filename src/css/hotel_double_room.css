@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  justify-content: center;
 }
 .about-room {
-  width: 686px;
+  max-width: 686px;
 }
 .room-description {
   display: flex;
@@ -57,7 +58,7 @@
 
 @media screen and (max-width: 768px) {
   .double-luxury-room-section {
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     padding-top: 64px;
   }
   .container-double-room {
@@ -97,11 +98,11 @@
   }
   .room-description-first {
     font-size: 14px;
-    width: 355px;
+    max-width: 355px;
     margin-bottom: 24px;
   }
   .room-description-second {
-    width: 355px;
+    max-width: 355px;
   }
   .btn-styles {
     font-size: 14px;
@@ -110,7 +111,7 @@
 }
 @media screen and (min-width: 768px) {
   .double-luxury-room-section {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     padding-top: 80px;
   }
   .container-double-room {
@@ -172,10 +173,10 @@
     max-width: 331px;
   }
   .room-description-first {
-    width: 369px;
+    max-width: 369px;
   }
   .room-description-second {
-    width: 299px;
+    max-width: 299px;
   }
   .btn-styles {
     padding: 8px 24px;
@@ -191,7 +192,7 @@
     margin-right: auto;
   }
   .double-luxury-room-section {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-top: 100px;
   }
   .room-list-picture {
@@ -199,10 +200,10 @@
     column-gap: 32px;
   }
   .room-description-first {
-    width: 355px;
+    max-width: 355px;
   }
   .room-description-second {
-    width: 299px;
+    max-width: 299px;
   }
 
   .picture-bathroom {
