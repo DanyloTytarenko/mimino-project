@@ -124,3 +124,8 @@ color: rgb(116, 123, 255);;
   fill: transparent;
 }
 
+.footer-icon-content:hover{
+    stroke: #fff;
+      fill: #121212;
+}
+

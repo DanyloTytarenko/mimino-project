@@ -164,10 +164,20 @@
 }
 
 
+/* Додала фокус і ховер для посилань тільки на світлобу хедері, бо на темному не гарно*/
+
 
 .social-icon,
 .social-icon-dark {
   fill: transparent;
+}
+
+/*.social-icon:hover, .social-icon:focus{
+  fill:#fff;
+}*/
+
+.social-icon-dark:hover,.social-icon-dark:focus{
+  fill: #121212;
 }
 
 .menu-icon,
@@ -176,6 +186,10 @@
   stroke: rgb(246, 246, 246);
 }
 
+/*.social-icon:hover, .social-icon:focus {
+  stroke: #121212;
+}*/
+
 
 
 .menu-icon-dark,
@@ -183,6 +197,17 @@
 .social-icon-dark {
   stroke: rgb(18, 18, 18);
 }
+
+.social-icon-dark:hover,
+.social-icon-dark:focus {
+  stroke: #fff;
+}
+
+.menu-social-item{
+  cursor: pointer;
+}
+
+/*І повісила Cursor на лішку*/
 
 .logo,
 .logo-dark {
