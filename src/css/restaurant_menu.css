@@ -246,6 +246,9 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .rest-menu-slide {
+    display: none;
+  }
   .img-btn-prev-large,
   .img-btn-next-large {
     display: none;
@@ -288,5 +291,10 @@
 @media screen and (min-width: 1440px) {
   .btn-book-table-dark {
     margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .swiper-btn-menu.rest-menu-slide {
+    display: none;
   }
 }
