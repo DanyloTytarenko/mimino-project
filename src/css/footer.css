@@ -16,6 +16,7 @@
     justify-content: center;
     padding: 44px 0 80px 0;
     gap: 370px;
+    max-width: 1440px;
   }
 }
 .footer-options {
@@ -70,19 +71,15 @@
   gap: 16px;
 }
 
-.footer-sociallink{
-
-    cursor: pointer;
+.footer-sociallink {
+  cursor: pointer;
 }
-
 
 .footer-icon {
   display: block;
   width: 20px;
   height: 20px;
 }
-  
-  
 
 @media screen and (min-width: 768px) {
   .footer-icon {
@@ -112,15 +109,17 @@
   cursor: pointer;
   transition: color var(--transition);
 }
-.footer-nav-link:hover, .footer-nav-link:focus{
-color: rgb(116, 123, 255);;
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: rgb(116, 123, 255);
 }
 
-.footer-icon
-
-
-.footer-icon-content {
+.footer-icon .footer-icon-content {
   stroke: #121212;
   fill: transparent;
+  transition: stroke var(--transition);
 }
-
+.footer-icon-content:hover,
+.footer-icon-content:focus {
+  stroke: rgb(116, 123, 255);
+}

@@ -11,9 +11,7 @@
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
 
-
 @media screen and (min-width: 768px) {
-
   .header,
   .header-light {
     padding: 20px 0;
@@ -48,8 +46,8 @@
 @media screen and (min-width: 1440px) {
   .header-wrapper {
     padding-left: 0;
-      padding-right: 0;
-      margin: 0 auto;
+    padding-right: 0;
+    margin: 0 auto;
     gap: 480px;
   }
 }
@@ -172,20 +170,22 @@
   }
 }
 
-
-
 .social-icon,
 .social-icon-dark {
   fill: transparent;
+  transition: stroke var(--transition);
 }
 
 .menu-icon,
 .menu-close,
 .social-icon {
   stroke: rgb(246, 246, 246);
+  transition: stroke var(--transition);
 }
-
-
+.social-icon:hover,
+.social-icon:focus {
+  stroke: rgb(116, 123, 255);
+}
 
 .menu-icon-dark,
 .menu-close-dark,
@@ -213,7 +213,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .header-logo,
   .header-logo-dark {
     font-size: 20px;
@@ -237,7 +236,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .header-logo-light,
   .header-logo-light-dark {
     font-size: 8px;
@@ -283,7 +281,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-
   .menu-container,
   .menu-light {
     display: none;
@@ -324,14 +321,19 @@
   text-transform: uppercase;
 
   color: rgb(247, 247, 247);
+  transition: color var(--transition);
 }
 
 .menu-navlink-dark {
   color: rgb(18, 18, 18);
 }
-
+.menu-navlink:hover,
+.menu-navlink-dark:hover,
+.menu-navlink:focus,
+.menu-navlink-dark:focus {
+  color: rgb(116, 123, 255);
+}
 @media screen and (min-width: 768px) {
-
   .menu-navlink,
   .menu-navlink-dark {
     font-size: 28px;
@@ -354,4 +356,12 @@
   display: flex;
   gap: 14px;
   align-items: center;
+}
+.social-icon-link {
+  display: flex;
+  align-items: center;
+}
+.social-icon-dark:hover,
+.social-icon-dark:focus {
+  stroke: rgb(116, 123, 255);
 }
